@@ -1,0 +1,11 @@
+problem tracking
+
+
+prometheus
+	- mongo exporter - nodePort can't be used
+	
+testcase
+	- azure - testbed crash with SSL - use Paho instead
+	
+
+AI
