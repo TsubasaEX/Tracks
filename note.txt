@@ -1,0 +1,42 @@
+Docker Hub 
+ * username: ecgwc
+  * email: alex.shao@advantech.com.tw
+  * password: @dvant1cH
+  
+  
+  
+  
+Hi Zach,
+
+我這邊在Azure 開了一個Azure Container Registry服務
+Server: adveiss.azurecr.io
+Username: adveiss
+Password: zSYrKLBDiBAXNw3T9Y3LNX8sSpy76G/S
+
+目前在Docker hub的image請Owner自行重新打tag上傳做版本控管
+Tag前面名稱必須為adveiss.azurecr.io
+下面是使用範例
+Instructions for Getting Started
+1.	1
+Install Docker
+Before you can try out the Azure Container Registry, you should install Docker.
+Refer to the Mac or Windows or Linux getting started instructions for Docker.
+2.	2
+Run the "hello-world" base image
+The following command will get you a running container straight off Docker Hub.
+This should display "Hello from Docker!".
+1.	docker run -it hello-world
+3.	3
+Login to your container registry
+Let's login to your container registry. You can get the login URI and credentials from Access keys blade.
+1.	docker login adveiss.azurecr.io
+4.	4
+Push to your registry
+Let's first prefix the image with your registry login URI so that it can be pushed to your private registry.
+The first command tags the image for uploading to your registry and the second pushes the image.
+1.	docker tag hello-world adveiss.azurecr.io/hello-world
+2.	docker push adveiss.azurecr.io/hello-world
+5.	5
+Pull from your registry
+Let's try to pull the image from your registry. You should find that your image is up to date.
+1.	docker pull adveiss.azurecr.io/hello-world
