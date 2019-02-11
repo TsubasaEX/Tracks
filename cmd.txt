@@ -85,6 +85,9 @@ rbd status kube/kubernetes-dynamic-pvc-79efc594-245f-11e9-bd5a-c400ad16bc2d
 rbd rm kube/kubernetes-dynamic-pvc-79efc594-245f-11e9-bd5a-c400ad16bc2d
 ceph osd blacklist add 192.168.11.6:0/3999158821
 
+apt-get install openjdk-8-jre
+apt-get install openjdk-8-jdk
+
 docker images
 docker pull quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.19.0
 docker tag quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.19.0 ecgwc/nginx-ingress-controller:0.19.0
@@ -93,7 +96,6 @@ docker push ecgwc/nginx-ingress-controller:0.19.0
 docker ps
 docker exec container_name ls
 docker exec -it container_name /bin/bash
-
 **********************
 mongostat --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS
 mongotop --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS
