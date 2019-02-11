@@ -1,0 +1,125 @@
+cf push -f manifest-develop.yml --no-start
+cf push -f manifest-training.yml --no-start
+cf push -f manifest-temp.yml --no-start
+cf push -f manifest-demo.yml --no-start
+cf push -f manifest.yml --no-start
+-----------------------------------------------------------
+cf bind-service portal-common-1.0.55 postgresql -c D:\Zach_Chih\Wise-PaaS_2_0_Git\EI-Common_latest\WebApp\scripts\build\database-group.json
+
+cf start portal-common-1.0.55
+
+cf bind-service common-worker-1.0.55 postgresql -c D:\Zach_Chih\Wise-PaaS_2_0_Git\EI-Common_latest\WebApp\scripts\build\database-group.json
+
+cf start common-worker-1.0.55
+-----------------------------------------------------------
+cf bind-service portal-rmm-1.0.88 postgresql -c D:\GIT\RMM-EI-Server\WebApp\scripts\build\database-group.json
+
+cf bind-service rmm-fucker-1.0.63 postgresql -c D:\GIT\RMM-EI-Server\Worker\scripts\build\database-group.json
+
+cf start portal-rmm-1.0.88
+
+cf start rmm-fucker-1.0.63
+
+cf org WISE-PaaS-Dev --guid
+
+**********************************************************
+git branch
+git checkout develop
+git checkout master
+git merge develop
+git tag
+git tag -a v-1.0.88 -m 'v1.0.88'
+git push --tags
+**********************************************************
+
+apidoc -i D:\GITEI-Common\WebApp\src\main\java\com\rest -o C:\Users\Zach.chih\Desktop\apidoc -c C:\Users\Zach.chih\AppData\Roaming\npm
+-----------------------------------------------------------
+apidoc -i D:\GIT\RMM-EI-Server\WebApp\src\main\java\com -o C:\Users\Zach.chih\Desktop\apidoc -c C:\Users\Zach.chih\AppData\Roaming\npm
+
+
+
+**********************Develop
+    <SQL>
+      <PostgreSQL>
+        <Properties>
+          <property name="eclipselink.cache.size.default" value="0"/>
+          <property name="eclipselink.logging.level" value="OFF"/>
+          <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ei-postgres.eastasia.cloudapp.azure.com:5432/907be467-80c6-4ee1-ae45-8963649182bc?currentSchema=rmm"/>
+          <property name="javax.persistence.jdbc.user" value="b1a528ce-c026-4703-832a-fb753ea484a1"/>
+          <property name="eclipselink.cache.shared.default" value="false"/>
+          <property name="javax.persistence.jdbc.password" value="qTpJjwhGtm9uZn+cjDawSvwQLllZIC0Y/RZ4L5SEZIE="/>
+          <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+          <property name="eclipselink.cache.type.default" value="NONE"/>
+          <property name="eclipselink.jdbc.cache-statements" value="true"/>
+        </Properties>
+      </PostgreSQL>
+    </SQL>
+    <NoSQL>
+      <MongoDB>
+        <IP>ei-mongodb-replica.eastasia.cloudapp.azure.com</IP>
+        <Port>27017</Port>
+        <username>23b686a5-a15f-4a45-9ff4-891876ebd01e</username>
+        <Password>V0JY7yYASWtaRJQ1ivXAxcwUW6AtmzLOVWLm6hOWlYs=</Password>
+        <DBName>2b092876-047c-46f4-bab0-4c617c3929fb</DBName>
+        <ssl>false</ssl>
+      </MongoDB>
+      <ElasticSearch>
+        <HostName>61.218.118.230</HostName>
+        <Port>30999</Port>
+        <Enable>false</Enable>
+      </ElasticSearch>
+    </NoSQL>
+**********************
+kubectl exec -it <pod> -- df
+systemctl restart kubelet.service
+ps -l|grep api
+ceph
+ceph -s
+ceph osd lspools
+ceph df
+rados df
+rbd ls <pool>
+rbd info kube/kubernetes-dynamic-pvc-9b34bbbb-04e9-11e9-b6c5-e6287e6e4a2f
+rbd diff kube/kubernetes-dynamic-pvc-df766d6b-1bc8-11e9-afb0-bebc99b2ed35 | awk '{ SUM += $2 } END { print SUM/1024/1024 " MB" }'
+rbd status kube/kubernetes-dynamic-pvc-79efc594-245f-11e9-bd5a-c400ad16bc2d
+rbd rm kube/kubernetes-dynamic-pvc-79efc594-245f-11e9-bd5a-c400ad16bc2d
+ceph osd blacklist add 192.168.11.6:0/3999158821
+
+docker images
+docker pull quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.19.0
+docker tag quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.19.0 ecgwc/nginx-ingress-controller:0.19.0
+docker login
+docker push ecgwc/nginx-ingress-controller:0.19.0
+docker ps
+docker exec container_name ls
+docker exec -it container_name /bin/bash
+
+**********************
+mongostat --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS
+mongotop --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS
+kubectl logs es-rmm-worker-85979dcfbc-s8rpm -f |& tee worker.txt-a
+kubectl logs es-rmm-worker-85979dcfbc-fdzxn -f |& tee worker.txt
+.\mongostat.exe 5 --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS |& tee stat.txt
+.\mongotop.exe 5 --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS |& tee top.txt
+**********************
+elasticsearch
+1. install elasticsearch - 512MB uses default path (don't install x-pack in this step, step-2 will do)
+2. elasticsearch-plugin.bat install file:///D:/Zach_Chih/tools/x-pack-6.2.4.zip  (don't install from internet -- not work)
+	-> elasticsearch-plugin.bat install file:///D:/Zach_Chih/tools/x-pack-6.2.4.zip
+3. copy elasticsearch.keystore from C:\Program Files\Elastic\Elasticsearch\6.2.4\config to C:\ProgramData\Elastic\Elasticsearch\config
+    -> if no key exists, use "elasticsearch-keystore.bat create"
+4. run elasticsearch
+5. \x-pack>setup-passwords interactive
+	-> enter password like the service name
+6. http://localhost:9200/
+	
+kibana
+1. download kibana zip file
+2. kibana-plugin.bat install file:///D:/Zach_Chih/tools/x-pack-6.2.4.zip  (don't install from internet -- not work)
+	-> kibana-plugin.bat install file:///D:/Zach_Chih/tools/x-pack-6.2.4.zip
+3. modify \config\kibana.yml
+	->elasticsearch.username: "elastic"
+	->elasticsearch.password: "elastic"
+4. http://localhost:5601/
+
+
