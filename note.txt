@@ -3,7 +3,7 @@ Docker Hub
   * email: alex.shao@advantech.com.tw
   * password: @dvant1cH
   
-  
+-------------------------------------------------------------------------  
   
   
 Hi Zach,
@@ -40,3 +40,6 @@ The first command tags the image for uploading to your registry and the second p
 Pull from your registry
 Let's try to pull the image from your registry. You should find that your image is up to date.
 1.	docker pull adveiss.azurecr.io/hello-world
+
+-------------------------------------------------------------------------  
+License Key:
