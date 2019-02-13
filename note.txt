@@ -42,4 +42,11 @@ Let's try to pull the image from your registry. You should find that your image 
 1.	docker pull adveiss.azurecr.io/hello-world
 
 -------------------------------------------------------------------------  
-License Key:
+ASUS
+admin
+@dv71347134
+wifi
+@dv27927818
+-------------------------------------------------------------------------  
+CoreDNS設定
+LAN -> DHCP Server -> DNS Server 192.168.11.6
