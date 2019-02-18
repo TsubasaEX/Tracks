@@ -30,6 +30,7 @@ git merge develop
 git tag
 git tag -a v-1.0.88 -m 'v1.0.88'
 git push --tags
+git tag --delete tagname
 **********************************************************
 
 apidoc -i D:\GITEI-Common\WebApp\src\main\java\com\rest -o C:\Users\Zach.chih\Desktop\apidoc -c C:\Users\Zach.chih\AppData\Roaming\npm
@@ -96,6 +97,10 @@ docker push ecgwc/nginx-ingress-controller:0.19.0
 docker ps
 docker exec container_name ls
 docker exec -it container_name /bin/bash
+
+**********************
+kubectl config --kubeconfig=config-viewer set-cluster kubernetes --server=https://192.168.11.6:6443 --certificate-authority=C:\ca.crt
+kubectl config --kubeconfig=config-viewer use-context viewer-ctx
 **********************
 mongostat --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS
 mongotop --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS
