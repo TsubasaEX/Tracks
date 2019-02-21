@@ -99,8 +99,9 @@ docker exec container_name ls
 docker exec -it container_name /bin/bash
 
 **********************
-kubectl config --kubeconfig=config-viewer set-cluster kubernetes --server=https://192.168.11.6:6443 --certificate-authority=C:\ca.crt
-kubectl config --kubeconfig=config-viewer use-context viewer-ctx
+kubectl config --kubeconfig=config set-cluster kubernetes --server=https://192.168.11.6:6443 --certificate-authority=C:\ca.crt
+kubectl config --kubeconfig=config set-cluster kubernetes --certificate-authority=C:\ca.crt
+kubectl config --kubeconfig=config use-context viewer-ctx
 **********************
 mongostat --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS
 mongotop --host portal.mongo.example.com:27017 --username wisepaas --password wisepaas --authenticationDatabase WISE-PaaS
