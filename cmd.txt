@@ -77,8 +77,17 @@ ps -l|grep api
 ceph
 ceph -s
 ceph osd lspools
+ceph osd stat
+ceph osd tree
+ceph daemon osd.0 perf dump
+ceph daemon osd.0 perf schema
+ceph daemon osd.0 perf histogram dump
+ceph daemon osd.0 perf histogram schema
 ceph df
 rados df
+rados bench -p kube 10 write --no-cleanup
+rados bench -p kube 10 rand
+rados bench -p kube 10 seq
 rbd ls <pool>
 rbd info kube/kubernetes-dynamic-pvc-9b34bbbb-04e9-11e9-b6c5-e6287e6e4a2f
 rbd diff kube/kubernetes-dynamic-pvc-df766d6b-1bc8-11e9-afb0-bebc99b2ed35 | awk '{ SUM += $2 } END { print SUM/1024/1024 " MB" }'
