@@ -89,12 +89,21 @@ rados bench -p kube 10 write --no-cleanup
 rados bench -p kube 10 rand
 rados bench -p kube 10 seq
 rbd ls <pool>
+rbd ls <pool> -l
+rbd snap create <pool>/<image>@<snap_image>
+rbd snap list <pool>/<snap_image>
+rbd export {pool-name}/{image-name} {file}
+rbd export kube/kubernetes-dynamic-pvc-022c5578-38d4-11e9-824a-c400ad16bc2d ./image_export
+rbd import {file} {pool-name}/{image-name}
 rbd info kube/kubernetes-dynamic-pvc-9b34bbbb-04e9-11e9-b6c5-e6287e6e4a2f
 rbd diff kube/kubernetes-dynamic-pvc-df766d6b-1bc8-11e9-afb0-bebc99b2ed35 | awk '{ SUM += $2 } END { print SUM/1024/1024 " MB" }'
 rbd status kube/kubernetes-dynamic-pvc-79efc594-245f-11e9-bd5a-c400ad16bc2d
 rbd rm kube/kubernetes-dynamic-pvc-79efc594-245f-11e9-bd5a-c400ad16bc2d
 ceph osd blacklist add 192.168.11.6:0/3999158821
 
+netstat -tulpn
+lsof -i
+lsof -i:8080
 apt-get install openjdk-8-jre
 apt-get install openjdk-8-jdk
 
