@@ -12,9 +12,9 @@ cf bind-service common-worker-1.0.55 postgresql -c D:\Zach_Chih\Wise-PaaS_2_0_Gi
 
 cf start common-worker-1.0.55
 -----------------------------------------------------------
-cf bind-service portal-rmm-1.0.88 postgresql -c D:\GIT\RMM-EI-Server\WebApp\scripts\build\database-group.json
+cf bind-service portal-rmm-1.0.97 postgresql -c D:\GIT\RMM-EI-Server\WebApp\scripts\build\database-group.json
 
-cf bind-service rmm-fucker-1.0.63 postgresql -c D:\GIT\RMM-EI-Server\Worker\scripts\build\database-group.json
+cf bind-service rmm-fucker-1.0.97 postgresql -c D:\GIT\RMM-EI-Server\Worker\scripts\build\database-group.json
 
 cf start portal-rmm-1.0.88
 
@@ -115,6 +115,9 @@ docker push ecgwc/nginx-ingress-controller:0.19.0
 docker ps
 docker exec container_name ls
 docker exec -it container_name /bin/bash
+
+sudo chattr -V +ia config
+ls attr
 
 **********************
 kubectl config --kubeconfig=config set-cluster kubernetes --server=https://192.168.11.6:6443 --certificate-authority=C:\ca.crt
