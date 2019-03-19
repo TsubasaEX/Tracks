@@ -84,6 +84,8 @@ ceph daemon osd.0 perf schema
 ceph daemon osd.0 perf histogram dump
 ceph daemon osd.0 perf histogram schema
 ceph df
+ceph osd dump | grep 'replicated size'
+ceph osd pool get kube size
 rados df
 rados bench -p kube 10 write --no-cleanup
 rados bench -p kube 10 rand
