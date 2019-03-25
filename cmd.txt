@@ -93,6 +93,7 @@ ceph df
 ceph osd dump | grep 'replicated size'
 ceph osd pool get kube size
 ceph pg dump
+ceph-deploy osd list k8s-m2
 systemctl stop ceph-osd@1
 df -h|grep osd
 rados df
@@ -111,6 +112,11 @@ rbd diff kube/kubernetes-dynamic-pvc-df766d6b-1bc8-11e9-afb0-bebc99b2ed35 | awk 
 rbd status kube/kubernetes-dynamic-pvc-79efc594-245f-11e9-bd5a-c400ad16bc2d
 rbd rm kube/kubernetes-dynamic-pvc-79efc594-245f-11e9-bd5a-c400ad16bc2d
 ceph osd blacklist add 192.168.11.6:0/3999158821
+kubectl set image deployment/es-rmm-portal es-rmm-portal=ecgwc/es-rmm-portal:1.0.98 --record=true
+kubectl rollout history deployment/es-rmm-portal 
+kubectl rollout
+kubectl rollout status deployment/es-rmm-portal
+kubectl scale deployment/es-rmm-portal --replicas=5
 
 netstat -tulpn
 lsof -i
