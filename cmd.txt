@@ -116,7 +116,11 @@ kubectl set image deployment/es-rmm-portal es-rmm-portal=ecgwc/es-rmm-portal:1.0
 kubectl rollout history deployment/es-rmm-portal 
 kubectl rollout
 kubectl rollout status deployment/es-rmm-portal
-kubectl scale deployment/es-rmm-portal --replicas=5
+kubectl scale deployment/es-rmm-portal --replicas=5 (scale up/down)
+cat /sys/block/sda/queue/rotational
+kubectl get pod -o=custom-columns=NAME:.metadata.name,STATUS:.status.phase,NODE:.spec.nodeName --all-namespaces
+hdparm -I /dev/sda
+smartctl -a /dev/sda
 
 netstat -tulpn
 lsof -i
