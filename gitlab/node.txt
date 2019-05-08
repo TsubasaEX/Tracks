@@ -1,0 +1,2 @@
+DNS: eiot-gitlab.eastasia.cloudapp.azure.com
+Account/Password: SUSIAccess/Susi@ccess
