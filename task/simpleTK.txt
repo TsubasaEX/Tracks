@@ -1,0 +1,29 @@
+Evelyn
+-------------------
+* rebooting manual/scripts
+* tags for each components
+* AlertManager
+* loki
+* ceph-exporter
+* ceph dashboard
+
+Terry
+-------------------
+* add rbac - one/two
+* add rebooing scripts
+* add uploading scripts - chartmuseum
+* scaling scripts - helm upgade
+* scaling manual
+* HA Testing
+
+Me
+-------------------
+* chartmuseum
+* kubeapps
+
+HA Issues
+-------------------
+1. No nodeSelector
+2. Adopt packages of single instance
+3. Ceph Object Replicas (3)
+ 
