@@ -3,9 +3,9 @@ Evelyn
 * rebooting manual/scripts
 * tags for each components
 * AlertManager
-* loki
 * ceph-exporter
-* ceph dashboard
+* ceph-dashboard
+* loki
 
 Terry
 -------------------
