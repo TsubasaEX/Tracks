@@ -1,0 +1,15 @@
+Here are the license key for verifying product activation.
+
+						Part#	Quantity	License Key
+[DeviceOn_Azure]  		32WSWPDOAZURA1	10	1-1PKP33R
+[DeviceOn_WISE-Stack]   32WSWPDOOP01A1	10	1-1PKWCRL
+[DeviceOn_Data-Server]	32WSWPDOOP02A1	10	1-1PKWCRP
+[DeviceOn_Standalone]  	32WSWPDOOP03A1	10	1-1PKWCS3
+
+
+[EdgeSense_Azure] (32WS-WPES-AZUR-A-1)                Test Key: 1-1OTNGO9
+[EdgeSense_EnSaaS] (沿用舊的 9806WPRM01)              Test Key: 1-1OL1Y3X
+[EdgeSense_Standalone] (32WSWPESOP03A1)               Test Key: 1-1P73LLE
+[EdgeSense_Data-Server] (32WSWPESOP02A1)              Test Key: 1-1P6GVF4
+[EdgeSense_WISE-Stack] (32WSWPESOP01A1)               Test Key: 1-1P6GVF0
+
