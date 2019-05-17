@@ -3,6 +3,8 @@ Account/Password: SUSIAccess/Susi@ccess
 
 gitlab
 DNS: eiot-gitlab.eastasia.cloudapp.azure.com
-Account/Password: root/@dvanZach
+root - Account/Password: root/@dvanZach
+zach - Account/Password: zach.chih/@dvanZach
+cloner - Account/Password: cloner/@dvC10ner
 
 git config --global http.sslVerify false

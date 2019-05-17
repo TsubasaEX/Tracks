@@ -1,8 +1,18 @@
 Docker Hub 
- * username: ecgwc
-  * email: alex.shao@advantech.com.tw
-  * password: @dvant1cH
-  
+username: ecgwc
+email: alex.shao@advantech.com.tw
+password: @dvant1cH
+
+Docker Hub 
+Server: adveiss.azurecr.io
+Username: adveiss
+Password: zSYrKLBDiBAXNw3T9Y3LNX8sSpy76G/S
+
+PC
+User: ubuntu/@dvant1cH
+root: root/r00t@dvant1cH
+
+
 -------------------------------------------------------------------------  
   
   
