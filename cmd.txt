@@ -123,8 +123,8 @@ hdparm -I /dev/sda
 smartctl -a /dev/sda
 
 //---remove rbd image
-rbd status kube/kubernetes-dynamic-pvc-0c617733-55bd-11e9-a1ca-c400ad1f4d4c
-ceph osd blacklist add 192.8.8.10:0/1262448884
+rbd status kube/kubernetes-dynamic-pvc-0455b319-6fc6-11e9-9f98-000babd4616d
+ceph osd blacklist add 192.168.11.7:0/3850997542
 ceph osd blacklist clear
 
 netstat -tulpn

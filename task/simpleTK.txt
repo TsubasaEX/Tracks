@@ -1,16 +1,18 @@
 Evelyn
 -------------------
-* rebooting manual/scripts
+v * rebooting manual/scripts
 v * tags for each components
-* AlertManager
+* AlertManager - up/volume/ -> group
 * ceph-exporter
 * ceph-dashboard
-* loki
+* loki - > add labels for all apps
 
 Terry
 -------------------
-* add rbac - one/two
-* add rebooing scripts
+v * add rbac - one/two
+v * add rebooting scripts - /etc/charts
+* kubernetes dashboard - problem login with viewer/
+* helm backup - /etc/backups
 * add uploading scripts - chartmuseum
 * scaling scripts - helm upgade
 * scaling manual
