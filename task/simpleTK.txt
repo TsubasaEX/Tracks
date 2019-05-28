@@ -3,6 +3,7 @@ Evelyn
 v * rebooting manual/scripts
 v * tags for each components
 * AlertManager - up/volume/ -> group
+* promgen
 * ceph-exporter
 * ceph-dashboard
 * loki - > add labels for all apps
