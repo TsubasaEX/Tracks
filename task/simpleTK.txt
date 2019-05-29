@@ -2,12 +2,18 @@ Evelyn
 -------------------
 v * rebooting manual/scripts
 v * tags for each components
-* AlertManager - up/volume/ -> group
-* promgen
+v * AlertManager - up/volume/ -> group
+? * promgen
 * ceph-exporter
 * ceph-dashboard
+* minio-exporter
+* minio-dashboard
 * loki - > add labels for all apps
-* UserManual - alertManager/ceph/loki
+* kubeapps
+* kubeapps - > useful charts?
+* kubeapps - > if deployment fails?
+* Monitoring Manual - alertManager/ceph/minio/loki
+* MarketPlace Manual - alertManager/ceph/minio/loki
 
 Terry
 -------------------
@@ -24,9 +30,8 @@ v * add rebooting scripts - /etc/charts
 
 Me
 -------------------
-* loki
 * chartmuseum
-* kubeapps
+
 
 HA Issues
 -------------------

@@ -122,6 +122,8 @@ kubectl get pod -o=custom-columns=NAME:.metadata.name,STATUS:.status.phase,NODE:
 hdparm -I /dev/sda
 smartctl -a /dev/sda
 
+kubectl get secret ceph-secret-user --export -o yaml
+
 //---remove rbd image
 rbd status kube/kubernetes-dynamic-pvc-0455b319-6fc6-11e9-9f98-000babd4616d
 ceph osd blacklist add 192.168.11.7:0/3850997542
