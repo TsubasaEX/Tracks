@@ -26,6 +26,7 @@ v * add rebooting scripts - /etc/charts
 * helm backup - /etc/backups
 * scaling scripts - helm upgade
 * scaling manual
+* IP Change
 * HA Testing
 
 Me
