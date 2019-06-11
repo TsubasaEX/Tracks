@@ -4,16 +4,20 @@ v * rebooting manual/scripts
 v * tags for each components
 v * AlertManager - up/volume/ -> group
 ? * promgen
+* docker-registry
+* Monitoring Manual - alertManager
+^^^^^
 * ceph-exporter
 * ceph-dashboard
 * minio-exporter
 * minio-dashboard
-* loki - > add labels for all apps
+* loki-stack - > add labels for all apps
 * kubeapps
 * kubeapps - > useful charts?
 * kubeapps - > if deployment fails?
-* Monitoring Manual - alertManager/ceph/minio/loki
-* MarketPlace Manual - alertManager/ceph/minio/loki
+* Monitoring Manual - ceph/minio/loki
+* MarketPlace Manual - kubeapps
+* Rancher
 
 Terry
 -------------------
@@ -23,6 +27,8 @@ v * add rebooting scripts - /etc/charts
 * *(dashboard?) config or config-dsadmin — /root/config from /root/.kube — /// sudo chattr -V +ia config
 * chart-operator — /root/utilities (root,ubuntu) — 755  —  /// sudo chattr -V +ia *
 * uploading charts - chartmuseum
+^^^^^
+* uploading docker images - docker-registry
 * helm backup - /etc/backups
 * scaling scripts - helm upgade
 * scaling manual
