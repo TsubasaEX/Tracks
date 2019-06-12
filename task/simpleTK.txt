@@ -23,6 +23,7 @@ Terry
 -------------------
 v * add rbac - one/two
 v * add rebooting scripts - /etc/charts
+* reorg - install scripts
 * kubernetes dashboard - problem login with viewer/
 * *(dashboard?) config or config-dsadmin — /root/config from /root/.kube — /// sudo chattr -V +ia config
 * chart-operator — /root/utilities (root,ubuntu) — 755  —  /// sudo chattr -V +ia *
