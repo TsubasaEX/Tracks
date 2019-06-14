@@ -5,7 +5,7 @@ v * tags for each components
 v * AlertManager - up/volume/ -> group
 * add installFromRepo.sh
 * docker-registry
-* Monitoring Manual - alertManager
+* Monitoring Manual - alertManager (silence/ingress)
 ^^^^^
 * ceph-exporter
 * ceph-dashboard
@@ -29,6 +29,7 @@ v * add rebooting scripts
 * add chart-operator — /root/scripts (root,ubuntu) — 755  —  /// sudo chattr -V +ia *
 * add /etc/charts
 * uploading charts - chartmuseum
+* update ADV_Param
 ^^^^^
 * uploading docker images - docker-registry
 * helm backup - /etc/backups
