@@ -30,6 +30,7 @@ v * add rebooting scripts
 * add /etc/charts
 * uploading charts - chartmuseum
 * update ADV_Param
+* technical manual - architecture (ip)
 ^^^^^
 * uploading docker images - docker-registry
 * helm backup - /etc/backups
