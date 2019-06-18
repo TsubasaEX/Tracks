@@ -12,6 +12,8 @@ PC
 User: ubuntu/@dvant1cH
 root: root/r00t@dvant1cH
 
+Kube Dashboard
+https://192.168.11.6:6443/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
 
 -------------------------------------------------------------------------  
   
