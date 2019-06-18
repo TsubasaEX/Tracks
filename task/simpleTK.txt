@@ -7,6 +7,7 @@ v * AlertManager - up/volume/ -> group
 * docker-registry
 * Monitoring Manual - alertManager (silence/ingress)
 ^^^^^
+* Cluster Management Manual - kubernets dashboard
 * ceph-exporter
 * ceph-dashboard
 * minio-exporter
