@@ -3,9 +3,10 @@ Evelyn
 v * rebooting manual/scripts
 v * tags for each components
 v * AlertManager - up/volume/ -> group
-* add installFromRepo.sh
-* docker-registry
-* Monitoring Manual - alertManager (silence/ingress)
+v * add installFromRepo.sh
+v * Monitoring Manual - alertManager (silence/ingress)
+* docker-registry - > minio(bucket: images) -> modify minio storage
+
 ^^^^^
 * Cluster Management Manual - kubernets dashboard
 * ceph-exporter
@@ -13,11 +14,12 @@ v * AlertManager - up/volume/ -> group
 * minio-exporter
 * minio-dashboard
 * loki-stack - > add labels for all apps
-* kubeapps
+* kubeapps - > minio/disable public repos
 * kubeapps - > useful charts?
 * kubeapps - > if deployment fails?
 * Monitoring Manual - ceph/minio/loki
 * MarketPlace Manual - kubeapps
+* k3s
 * Rancher
 
 Terry
@@ -27,10 +29,15 @@ v * add rebooting scripts
 * reorg - install scripts
 * kubernetes dashboard - problem login with viewer/ -> --authentication-mode=basic
 * *(dashboard?) config or config-root — /root/config from /root/.kube — /// sudo chattr -V +ia config
-* add chart-operator — /root/scripts (root,ubuntu) — 755  —  /// sudo chattr -V +ia *
-* add /etc/charts
-* uploading charts - chartmuseum
+
+* add /etc/dss/charts
+* uploading charts - /etc/dss/charts/pushCharts.sh - chartmuseum
+* 5T Deployment
+
+* add /etc/dss/images
+* uploading images - /etc/dss/images/pushImages.sh - docker-registry
 * NAS Support
+
 * update ADV_Param
 * technical manual - architecture (ip)
 ^^^^^
