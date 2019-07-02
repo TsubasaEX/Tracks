@@ -5,12 +5,13 @@ v * tags for each components
 v * AlertManager - up/volume/ -> group
 v * add installFromRepo.sh
 v * Monitoring Manual - alertManager (silence/ingress)
-* values/tags
+* values.yaml - repository/tags
 * rmm-event-datasource
 * password
+* binary exec for shutdown/reboot
 * docker-registry - > minio(bucket: images) -> modify minio storage
 * docker-registry - > secret
-* binary exec for shutdown/reboot
+
 * loki-stack - > add labels for all apps
 
 ^^^^^
