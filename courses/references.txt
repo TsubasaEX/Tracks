@@ -1,0 +1,35 @@
+What is a Container?
+https://www.docker.com/resources/what-container
+
+What is Kubernetes?
+https://kubernetes.io/
+https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
+
+Helm
+https://github.com/helm/helm
+https://helm.sh/docs/using_helm/#installing-helm
+
+Helm Charts
+https://helm.sh/docs/developing_charts/#charts
+
+How To Create Your First Helm Chart
+https://docs.bitnami.com/kubernetes/how-to/create-your-first-helm-chart/
+
+Creating your first Dockerfile, image and container
+https://www.freecodecamp.org/news/a-beginners-guide-to-docker-how-to-create-your-first-docker-application-cc03de9b639f/
+https://www.youtube.com/watch?v=YFl2mCHdv24
+https://www.youtube.com/watch?v=hnxI-K10auY
+
+Docker for beginer
+https://docker-curriculum.com/
+
+DockerFile
+https://docker-curriculum.com/#dockerfile
+https://kapeli.com/cheat_sheets/Dockerfile.docset/Contents/Resources/Documents/index
+
+Docker Hub: Search for container application
+https://hub.docker.com/
+
+Kubeapps
+https://hub.kubeapps.com/
+
