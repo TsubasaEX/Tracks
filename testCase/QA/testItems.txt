@@ -1,0 +1,45 @@
+UserManual
+----
+* Authentication
+
+ 1. root - ca.pem/config
+
+ 2. ubuntu - ca.pem/config 
+
+* Authorization (RBAC)
+
+```
+kubectl get all (1 & 2 Pass)
+```
+
+```
+kubectl delete pod/<pod> (1 Pass & 2 Fail)
+```
+
+```
+helm list (1 Pass & 2 Fail)
+```
+
+* Access Web Services (IP)
+
+ * http://<ip>:<port>
+
+* Access Web Services (DNS)
+
+ * http://<url>:<port>
+
+
+Stress Test
+---
+* 400 Devices (75 sensors per 60 secs) - 2 days
+
+ * Check basic functionalities of all Applications
+
+ * Monitoring Reports - Grafana (Cluster/Mongo/RabbitMQ/Worker)
+ 
+* 400 Devices(75 sensors per 1 secs) - 2 days
+
+ * Check basic functionalities of all Applications
+
+ * Monitoring Reports - Grafana (Cluster/Mongo/RabbitMQ/Worker)
+
