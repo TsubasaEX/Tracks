@@ -1,0 +1,18 @@
+# Node Scaling Up
+  - ADD K8S Node
+  - ADD CEPH Node
+  - HELM Upgrade with existing charts (/etc/dss/charts)
+    - Use corresponding values.yaml (/etc/dss/charts/<mychart>/scaling/scaling_values.yaml)
+    - Helm upgrade -f <scaling_values>.yaml
+    - 
+
+
+### <scaling_values>.yaml
+
+Located at directory /etc/dss/charts/<mychart>/scaling and generated through deployment.
+
+| Item | README |
+| ------ | ------ |
+| Memory | TBD |
+| NodeSelector | TBD |
+| PV | Multiply PV by #Node |
