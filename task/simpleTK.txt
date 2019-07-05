@@ -5,17 +5,16 @@ v * tags for each components
 v * AlertManager - up/volume/ -> group
 v * add installFromRepo.sh
 v * Monitoring Manual - alertManager (silence/ingress)
-* values.yaml - repository/tags
-* rmm-event-datasource
-* password
-* binary exec for shutdown/reboot
-* docker-registry - > minio(bucket: images) -> modify minio storage
-* docker-registry - > secret
+v * values.yaml - repository/tags
+v * rmm-event-datasource
+v * password
+v * binary exec for shutdown/reboot
+v * docker-registry - > minio(bucket: images) -> modify minio storage
+v * docker-registry - > secret
 
 * loki-stack - > add labels for all apps
 
 ^^^^^
-* Cluster Management Manual - kubernets dashboard
 * ceph-exporter
 * ceph-dashboard
 * minio-exporter
@@ -40,24 +39,29 @@ v * *(dashboard?) config or config-root — /root/config from /root/.kube — //
 v * add /etc/dss/charts
 v * uploading charts - /etc/dss/charts/pushCharts.sh - chartmuseum
 
+v * 5T Deployment - Mongo(1.5 hr)
+
 * add /etc/dss/images
 * uploading images - /etc/dss/images/pushImages.sh - docker-registry
 
-* 5T Deployment
+* scaling scripts - helm upgade
+* scaling manual
+
 * NAS Support
 
 v * update ADV_Param
 * technical manual - architecture (ip)
 ^^^^^
 * helm backup - /etc/backups
-* scaling scripts - helm upgade
-* scaling manual
 * IP Change
 * HA Testing
 
 Me
 -------------------
-* chartmuseum
+v * chartmuseum
+v * Cluster Management Manual - kubernets dashboard
+* Redmine
+
 
 
 HA Issues

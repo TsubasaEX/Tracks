@@ -28,18 +28,20 @@ helm list (1 Pass & 2 Fail)
 
  * http://<url>:<port>
 
+* Kubernetes Dashbaord
+
 
 Stress Test
 ---
 * 400 Devices (75 sensors per 60 secs) - 2 days
 
- * Check basic functionalities of all Applications
+ * Check basic functionalities of all Applications (EdgeSense/Grafana....)
 
  * Monitoring Reports - Grafana (Cluster/Mongo/RabbitMQ/Worker)
  
-* 400 Devices(75 sensors per 1 secs) - 2 days
+* 400 Devices (75 sensors per 1 secs) - 2 days
 
- * Check basic functionalities of all Applications
+ * Check basic functionalities of all Applications (EdgeSense/Grafana....)
 
  * Monitoring Reports - Grafana (Cluster/Mongo/RabbitMQ/Worker)
 
