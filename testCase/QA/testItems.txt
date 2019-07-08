@@ -23,12 +23,16 @@ helm list (1 Pass & 2 Fail)
 * Access Web Services (IP)
 
  * http://<ip>:<port>
+ * signin portal
 
 * Access Web Services (DNS)
 
  * http://<url>:<port>
+ * signin portal
 
 * Kubernetes Dashbaord
+ * signin portal (basic/config)
+ * viewing each resources
 
 
 Stress Test
