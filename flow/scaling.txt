@@ -23,7 +23,5 @@ Located at directory `/etc/dss` and generated through Deployment and modified th
 
 | Item | Value |
 | ------ | ------ |
-| VERSION | EDGESENSE v-1.0.0|
-| NODE | #NODE|
-| DISK | TBD|
+| VERSION | EDGESENSE_#NODE_#DISK v-1.0.0|
 
