@@ -17,7 +17,7 @@ NAS
 	- 2T -> ?T
 	- 10T -> ?T
 	
-testcase
-	- azure - testbed crash with SSL - use Paho instead
+deployment
+	- ghost clone?
 	
 AI
