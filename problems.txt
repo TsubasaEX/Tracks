@@ -1,11 +1,23 @@
 problem tracking
 
+Scaling
+	- 2T -> 4T
+	- 10T -> 20T
+	No more 2Nodes  -> Or it's just for larger storage.
+					-> Kubeflow
+	
+HA (3 Nodes)
+	- No NodeSelector
+	- Ceph Replica 3
 
-prometheus
-	- mongo exporter - nodePort can't be used
+Services
+	- 3 months
+
+NAS
+	- 2T -> ?T
+	- 10T -> ?T
 	
 testcase
 	- azure - testbed crash with SSL - use Paho instead
 	
-
 AI

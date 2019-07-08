@@ -6,8 +6,6 @@
     - USE corresponding <scaling_values>.yaml (`/etc/dss/charts/<mychart>/scaling/<scaling_values>.yaml`)
     - Helm upgrade -f <scaling_values>.yaml
     - UPDATE SYSTEMINFO
-    - 
-
 
 ### <scaling_values>.yaml
 
@@ -20,11 +18,12 @@ Located at directory `/etc/dss/charts/<mychart>/scaling` and generated through S
 | Replicas | TBD|
 | PV | Multiply PV by #Node |
 
-### SYSTEMINFO
+### systeminfo
 Located at directory `/etc/dss` and generated through Deployment and modified through Scaling. Format : `#NODE_values.yaml`
 
 | Item | Value |
 | ------ | ------ |
-| VERSION | DSS_EDGESENSE v-1.0.0|
-| DISK | TBD|
+| VERSION | EDGESENSE v-1.0.0|
 | NODE | #NODE|
+| DISK | TBD|
+
