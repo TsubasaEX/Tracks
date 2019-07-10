@@ -39,10 +39,14 @@ v * *(dashboard?) config or config-root — /root/config from /root/.kube — //
 v * add /etc/dss/charts
 v * uploading charts - /etc/dss/charts/pushCharts.sh - chartmuseum
 
-v * 5T Deployment - Mongo(1.5 hr)
+v * 10T Deployment - Mongo(1.5 hr)
 
 * add /etc/dss/images
 * uploading images - /etc/dss/images/pushImages.sh - docker-registry
+
+* base image - ubuntu
+
+* 10T*2 Deployment - Mongo
 
 * scaling scripts - helm upgade
 * scaling manual
