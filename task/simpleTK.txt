@@ -11,7 +11,7 @@ v * password
 v * binary exec for shutdown/reboot
 v * docker-registry - > minio(bucket: images) -> modify minio storage
 v * docker-registry - > secret
-
+* loki-stack - >retention period
 * loki-stack - > add labels for all apps
 
 ^^^^^
@@ -64,8 +64,8 @@ Me
 -------------------
 v * chartmuseum
 v * Cluster Management Manual - kubernets dashboard
-* Redmine
-
+v * Redmine
+* eflow
 
 
 HA Issues
