@@ -5,13 +5,14 @@ Scaling
 	- 10T -> 20T
 	No more 2Nodes  -> Or it's just for larger storage.
 					-> Kubeflow
+	- mongo -> sharding? really need sharding?
 	
 HA (3 Nodes)
 	- No NodeSelector
 	- Ceph Replica 3
 
 Services
-	- 3 months
+	v - 3 months
 
 NAS
 	- 2T -> ?T
@@ -20,4 +21,19 @@ NAS
 deployment
 	- ghost clone?
 	
-AI
+	
+	
+	
+Mongo Sharding
+
+* Sharding is the only solution for some classes of deployments. Use sharded clusters if:
+	- your data set approaches or exceeds the storage capacity of a single MongoDB instance.
+	- the size of your system’s active working set will soon exceed the capacity of your system’s maximum RAM.
+	- a single MongoDB instance cannot meet the demands of your write operations, and all other approaches have not reduced contention.
+	- If these attributes are not present in your system, sharding will only add complexity to your system without adding much benefit.
+	
+* Production Configuration
+In a production cluster, ensure that data is redundant and that your systems are highly available. Consider the following for a production sharded cluster deployment:
+	- Deploy Config Servers as a 3 member replica set
+	- Deploy each Shard as a 3 member replica set
+	- Deploy one or more mongos routers
