@@ -23,11 +23,13 @@ v * docker-registry - > secret
 * minio-exporter
 * minio-dashboard
 * efk-stack -> 2 Nodes
+* Rancher
+* WeaveScope
 * Monitoring Manual - ceph/minio/loki
 * MarketPlace Manual - kubeapps
 * LDAP
 * k3s
-* Rancher
+
 
 Terry
 -------------------
