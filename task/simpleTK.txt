@@ -20,11 +20,11 @@ v * docker-registry - > secret
 * loki-stack - > add labels for all apps
 
 ^^^^^
+* WeaveScope -> 2 Nodes
+* efk-stack -> 2 Nodes 
+* Rancher -> replace kube-dashboard -> 2 Nodes
 * minio-exporter
 * minio-dashboard
-* efk-stack -> 2 Nodes
-* Rancher
-* WeaveScope
 * Monitoring Manual - ceph/minio/loki
 * MarketPlace Manual - kubeapps
 * LDAP
