@@ -25,7 +25,8 @@ v * docker-registry - > secret
 * efk-stack -> 2 Nodes 
 * minio-exporter
 * minio-dashboard
-* Monitoring Manual - ceph/minio/loki
+* Monitoring Manual - ceph/mino/loki
+* Monitoring Manual - WeaveScope
 * MarketPlace Manual - kubeapps
 * LDAP
 * k3s
@@ -44,8 +45,8 @@ v * uploading charts - /etc/dss/charts/pushCharts.sh - chartmuseum
 
 v * 10T Deployment - Mongo(1.5 hr)
 
-* add /etc/dss/images
-* uploading images - /etc/dss/images/pushImages.sh - docker-registry
+v * add /etc/dss/images
+v * uploading images - /etc/dss/images/pushImages.sh - docker-registry
 
 * base image - ubuntu
 

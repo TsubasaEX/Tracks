@@ -18,6 +18,10 @@ PC
 User: ubuntu/advant1cH
 root: root/r00tadvant1cH
 
+Terry Router
+wifi: k8s-lan
+password: advant1cH
+
 Kube Dashboard
 https://192.168.11.6:6443/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
 
