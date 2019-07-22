@@ -21,6 +21,7 @@ v * docker-registry - > secret
 
 ^^^^^
 * WeaveScope -> basic-auth/snapshot
+* Mongo Sharding w/ replica -> 3 Nodes
 * Rancher -> replace kube-dashboard
 * efk-stack -> 2 Nodes 
 * minio-exporter
@@ -50,7 +51,9 @@ v * uploading images - /etc/dss/images/pushImages.sh - docker-registry
 
 * base image - ubuntu
 
-* 10T*2 Deployment - Mongo
+* dynamic scaling script - PV/helm upgrade
+
+* 10T*2 Deployment - Mongo (require time?)
 
 * scaling scripts - helm upgade
 * scaling manual
@@ -76,5 +79,8 @@ HA Issues
 -------------------
 1. No nodeSelector
 2. Adopt packages of single instance
-3. Ceph Object Replicas (3)
- 
+3. Ceph Object Replicas (3) - > All PV HA(Mongo/Postgres/RabbitMQ/Prometheus) -> Still single instances
+4. memory specs?
+5. App HA or Ceph Replicas?
+6. Would all replicas deleted by helm delete?
+7. Would mongo still keep data if one osd down when replica 3? 
