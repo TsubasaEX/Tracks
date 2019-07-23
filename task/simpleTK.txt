@@ -83,4 +83,5 @@ HA Issues
 4. memory specs?
 5. App HA or Ceph Replicas?
 6. Would all replicas deleted by helm delete?
-7. Would mongo still keep data if one osd down when replica 3? 
+7. Would mongo still keep data if one osd down when replica 3?
+8. CRUSH Rules - > 3 replicas on 3 hosts 

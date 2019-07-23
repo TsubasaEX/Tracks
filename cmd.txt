@@ -126,7 +126,7 @@ kubectl get secret ceph-secret-user --export -o yaml
 
 //---remove rbd image
 rbd status kube/kubernetes-dynamic-pvc-0455b319-6fc6-11e9-9f98-000babd4616d
-ceph osd blacklist add 192.168.11.7:0/3850997542
+ceph osd blacklist add 192.168.11.6:0/1121347948
 ceph osd blacklist clear
 
 netstat -tulpn
