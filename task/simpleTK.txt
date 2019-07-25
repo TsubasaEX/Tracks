@@ -84,4 +84,23 @@ HA Issues
 5. App HA or Ceph Replicas?
 6. Would all replicas deleted by helm delete?
 7. Would mongo still keep data if one osd down when replica 3?
-8. CRUSH Rules - > 3 replicas on 3 hosts 
+8. CRUSH Rules - > 3 replicas on 3 hosts
+9. ceph osd pool set data min_size 3 / ceph osd pool set data size 3 
+10. Loadbalancer (Keepalived ) for 3 master 
+
+
+Kubernetes Stress/Performance Test
+-------------------
+1. Stress 
+
+2. Chaos
+	- Kube Monkey
+		- https://github.com/asobti/kube-monkey
+		- https://www.gremlin.com/chaos-monkey/chaos-monkey-alternatives/kubernetes/
+	- Chaoskube
+		- https://kubedex.com/resource/chaoskube/
+		- https://hub.kubeapps.com/charts/stable/chaoskube
+3.Benchmark
+ - 
+
+
