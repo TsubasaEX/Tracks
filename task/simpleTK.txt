@@ -20,6 +20,7 @@ v * docker-registry - > secret
 * loki-stack - > add labels for all apps
 
 ^^^^^
+* KuberHealthy
 * WeaveScope -> basic-auth/snapshot
 * Mongo Sharding w/ replica -> 3 Nodes
 * Rancher -> replace kube-dashboard
@@ -89,18 +90,38 @@ HA Issues
 10. Loadbalancer (Keepalived ) for 3 master 
 
 
-Kubernetes Stress/Performance Test
+Kubernetes Test
 -------------------
-1. Stress 
-
-2. Chaos
-	- Kube Monkey
-		- https://github.com/asobti/kube-monkey
-		- https://www.gremlin.com/chaos-monkey/chaos-monkey-alternatives/kubernetes/
-	- Chaoskube
-		- https://kubedex.com/resource/chaoskube/
-		- https://hub.kubeapps.com/charts/stable/chaoskube
-3.Benchmark
- - 
+1. Reliability/Stability
+	- Stress 
+		- *ClusterLoader
+			- https://github.com/kubernetes/perf-tests/tree/master/clusterloader2
+	- Chaos
+		- Kube Monkey
+			- https://github.com/asobti/kube-monkey
+			- https://www.gremlin.com/chaos-monkey/chaos-monkey-alternatives/kubernetes/
+		- *Chaoskube
+			- https://kubedex.com/resource/chaoskube/
+			- https://hub.kubeapps.com/charts/stable/chaoskube
+		- Chaos Toolkit
+			- https://github.com/chaostoolkit/chaostoolkit-kubernetes
+		- *powerfulseal
+			- https://github.com/bloomberg/powerfulseal
+		
+2.load-test, benchmark, framework or other tools
+	- *test-infra
+		- https://github.com/kubernetes/test-infra
+	- perf-tests
+		- https://github.com/kubernetes/perf-tests
+	- Sonobuoy
+		- https://github.com/heptio/sonobuoy
+		
+3. synthetic testing		
+	- *KuberHealthy	
+		- Easy synthetic testing for Kubernetes clusters. Supplements other solutions like Prometheus nicely.
+		- https://github.com/Comcast/kuberhealthy		
+		
+4. e2e test
+	- https://github.com/kubernetes/kubernetes/tree/master/test/e2e
 
 
