@@ -20,7 +20,6 @@ v * docker-registry - > secret
 * loki-stack - > add labels for all apps
 
 ^^^^^
-* KuberHealthy
 * WeaveScope -> basic-auth/snapshot
 * Mongo Sharding w/ replica -> 3 Nodes
 * Rancher -> replace kube-dashboard
@@ -53,6 +52,8 @@ v * uploading images - /etc/dss/images/pushImages.sh - docker-registry
 * base image - ubuntu
 
 * dynamic scaling script - PV/helm upgrade
+* pushImage.sh
+* add DNS namespace in /etc/resolv.conf
 
 * 10T*2 Deployment - Mongo (require time?)
 
@@ -74,6 +75,12 @@ v * chartmuseum
 v * Cluster Management Manual - kubernets dashboard
 v * Redmine
 * eflow
+* update strategy: Rolling Update
+	- maxUnavailable: 0
+	- http://rahmonov.me/posts/zero-downtime-deployment-with-kubernetes/
+* ceph: balancer
+* MAAS?
+* 
 
 
 HA Issues
@@ -123,5 +130,9 @@ Kubernetes Test
 		
 4. e2e test
 	- https://github.com/kubernetes/kubernetes/tree/master/test/e2e
+
+5. Validate a kops cluster.
+	- https://github.com/kubernetes/kops/blob/master/docs/cli/kops_validate.md
+	
 
 
