@@ -11,11 +11,12 @@ v * password
 v * binary exec for shutdown/reboot
 v * docker-registry - > minio(bucket: images) -> modify minio storage
 v * docker-registry - > secret
+v * ceph-exporter
+v * ceph-dashboard
+* maunaul - ceph-dashboard
 * kubeapps - > minio/disable public repos
 * kubeapps - > useful charts?
 * kubeapps - > if deployment fails?
-* ceph-exporter
-* ceph-dashboard
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
 
