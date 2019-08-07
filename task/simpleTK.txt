@@ -19,9 +19,12 @@ v * ceph-dashboard
 * kubeapps - > if deployment fails?
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
+* rolling update
+* podPriority
 
 ^^^^^
 * WeaveScope -> basic-auth/snapshot
+* Searchlight
 * Mongo Sharding w/ replica -> 3 Nodes
 * Rancher -> replace kube-dashboard
 * efk-stack -> 2 Nodes 
@@ -50,11 +53,25 @@ v * 10T Deployment - Mongo(1.5 hr)
 v * add /etc/dss/images
 v * uploading images - /etc/dss/images/pushImages.sh - docker-registry
 
+v * pushImage.sh
+v * add DNS namespace in /etc/resolv.conf
 * base image - ubuntu
 
-* dynamic scaling script - PV/helm upgrade
-* pushImage.sh
-* add DNS namespace in /etc/resolv.conf
+* ceph balancer
+* Encrypting Secret Data at Rest
+	- Kubernetes version 1.13.0 or later is required
+	--experimental-encryption-provider-config
+	
+* PodPriority 
+    - Guaranteed Scheduling For Critical Add-On Pods
+	- https://kubernetes.io/docs/tasks/administer-cluster/out-of-resource/
+	- https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/
+	- Nginx/CoreDNS	
+	- Docker Registry/Chartmuseum
+
+* Guaranteed Scheduling For Critical Add-On Pods
+	
+? * dynamic scaling script - PV/helm upgrade
 
 * 10T*2 Deployment - Mongo (require time?)
 
@@ -76,12 +93,10 @@ v * chartmuseum
 v * Cluster Management Manual - kubernets dashboard
 v * Redmine
 * eflow
-* update strategy: Rolling Update
+v * update strategy: Rolling Update
 	- maxUnavailable: 0
 	- http://rahmonov.me/posts/zero-downtime-deployment-with-kubernetes/
-* ceph: balancer
-* MAAS?
-* 
+v* PodPriority
 
 
 HA Issues
