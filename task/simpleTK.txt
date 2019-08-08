@@ -17,10 +17,12 @@ v * ceph-dashboard
 * kubeapps - > minio/disable public repos
 * kubeapps - > useful charts?
 * kubeapps - > if deployment fails?
+* add chart icon
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
-* rolling update
+v * rolling update
 * podPriority
+
 
 ^^^^^
 * WeaveScope -> basic-auth/snapshot
