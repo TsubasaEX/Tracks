@@ -24,6 +24,7 @@ v * ceph-dashboard
 
 ^^^^^
 * WeaveScope -> basic-auth/snapshot
+* Mongo DB rotation
 * Searchlight
 * Mongo Sharding w/ replica -> 3 Nodes
 * Rancher -> replace kube-dashboard
@@ -70,6 +71,7 @@ v * add DNS namespace in /etc/resolv.conf
 	- Docker Registry/Chartmuseum
 
 * Guaranteed Scheduling For Critical Add-On Pods
+* Default Storage Class
 	
 ? * dynamic scaling script - PV/helm upgrade
 
