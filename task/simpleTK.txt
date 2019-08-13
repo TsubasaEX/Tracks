@@ -13,15 +13,18 @@ v * docker-registry - > minio(bucket: images) -> modify minio storage
 v * docker-registry - > secret
 v * ceph-exporter
 v * ceph-dashboard
+v * rolling update
 * maunaul - ceph-dashboard
+* podPriority
+* restartPolicy
 * kubeapps - > minio/disable public repos
 * kubeapps - > useful charts?
 * kubeapps - > if deployment fails?
-* add chart icon
+* add chart icon (offline work?)
+* Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add Repo/Refresh)
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
-v * rolling update
-* podPriority
+
 
 
 ^^^^^
@@ -35,7 +38,6 @@ v * rolling update
 * minio-dashboard
 * Monitoring Manual - ceph/mino/loki
 * Monitoring Manual - WeaveScope
-* MarketPlace Manual - kubeapps
 * LDAP
 * k3s
 
@@ -60,19 +62,21 @@ v * pushImage.sh
 v * add DNS namespace in /etc/resolv.conf
 * base image - ubuntu
 
-* ceph balancer
-* Encrypting Secret Data at Rest
-	- Kubernetes version 1.13.0 or later is required
-	--experimental-encryption-provider-config
-	
-* PodPriority 
+* ceph balancer	
+v * PodPriority 
     - Guaranteed Scheduling For Critical Add-On Pods
 	- https://kubernetes.io/docs/tasks/administer-cluster/out-of-resource/
 	- https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/
 	- Nginx/CoreDNS	
 	- Docker Registry/Chartmuseum
 
-* Guaranteed Scheduling For Critical Add-On Pods
+* recover docker-registry/images
+* HDD/SSD systeminfo
+
+* Encrypting Secret Data at Rest
+	- Kubernetes version 1.13.0 or later is required
+	--experimental-encryption-provider-config
+	
 * Default Storage Class
 	
 ? * dynamic scaling script - PV/helm upgrade
@@ -91,6 +95,11 @@ v * update ADV_Param
 * IP Change
 * HA Testing
 
+Newbie
+-------------------
+* Rook
+
+
 Me
 -------------------
 v * chartmuseum
@@ -100,8 +109,10 @@ v * Redmine
 v * update strategy: Rolling Update
 	- maxUnavailable: 0
 	- http://rahmonov.me/posts/zero-downtime-deployment-with-kubernetes/
-v* PodPriority
-
+v * PodPriority
+v * restartPolicy
+* volume snaptshot
+	- Alpha - k8s v1.12
 
 HA Issues
 -------------------
