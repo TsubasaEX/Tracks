@@ -22,6 +22,12 @@ v * rolling update
 * kubeapps - > if deployment fails?
 * add chart icon (offline work?)
 * Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add Repo/Refresh)
+*1.如何新增plugin
+ 2.如何自己創建dashboard
+	- 拉Panel
+	- 選datasource (prometheus)
+	- 加Query (可以cluster memory當範例)
+	- 儲存
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
 
@@ -29,6 +35,7 @@ v * rolling update
 
 ^^^^^
 * WeaveScope -> basic-auth/snapshot
+* LDAP
 * Mongo DB rotation
 * Searchlight
 * Mongo Sharding w/ replica -> 3 Nodes
@@ -38,7 +45,6 @@ v * rolling update
 * minio-dashboard
 * Monitoring Manual - ceph/mino/loki
 * Monitoring Manual - WeaveScope
-* LDAP
 * k3s
 
 
@@ -60,9 +66,7 @@ v * uploading images - /etc/dss/images/pushImages.sh - docker-registry
 
 v * pushImage.sh
 v * add DNS namespace in /etc/resolv.conf
-* base image - ubuntu
 
-* ceph balancer	
 v * PodPriority 
     - Guaranteed Scheduling For Critical Add-On Pods
 	- https://kubernetes.io/docs/tasks/administer-cluster/out-of-resource/
@@ -72,12 +76,14 @@ v * PodPriority
 
 * recover docker-registry/images
 * HDD/SSD systeminfo
-
+* replace README
+* Default Storage Class
 * Encrypting Secret Data at Rest
 	- Kubernetes version 1.13.0 or later is required
 	--experimental-encryption-provider-config
-	
-* Default Storage Class
+* base image - ubuntu
+* ceph balancer		
+
 	
 ? * dynamic scaling script - PV/helm upgrade
 
@@ -98,6 +104,7 @@ v * update ADV_Param
 Newbie
 -------------------
 * Rook
+* volume snaptshot
 
 
 Me
@@ -113,6 +120,10 @@ v * PodPriority
 v * restartPolicy
 * volume snaptshot
 	- Alpha - k8s v1.12
+* RBAC - kubeapps
+* mongo cape
+* TPM
+* README
 
 HA Issues
 -------------------
