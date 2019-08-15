@@ -17,12 +17,13 @@ v * rolling update
 * maunaul - ceph-dashboard
 * podPriority
 * restartPolicy
-* kubeapps - > minio/disable public repos
+v * kubeapps - > minio/disable public repos
+v * kubeapps - > if deployment fails? Not Ready
 * kubeapps - > useful charts?
-* kubeapps - > if deployment fails?
-* add chart icon (offline work?)
+* kubeapps - > service catalog
+* add chart icon (mount hostPath)
 * Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add Repo/Refresh)
-*1.如何新增plugin
+*1.如何新增plugin (root only)
  2.如何自己創建dashboard
 	- 拉Panel
 	- 選datasource (prometheus)
@@ -34,8 +35,10 @@ v * rolling update
 
 
 ^^^^^
-* WeaveScope -> basic-auth/snapshot
+* WeaveScope -> basic-auth/snapshot (root only)
+* Helm-Exporter
 * LDAP
+* Event-Exporter
 * Mongo DB rotation
 * Searchlight
 * Mongo Sharding w/ replica -> 3 Nodes
@@ -76,14 +79,13 @@ v * PodPriority
 
 * recover docker-registry/images
 * HDD/SSD systeminfo
-* replace README
 * Default Storage Class
 * Encrypting Secret Data at Rest
 	- Kubernetes version 1.13.0 or later is required
 	--experimental-encryption-provider-config
-* base image - ubuntu
+* replace README
 * ceph balancer		
-
+* base image - ubuntu
 	
 ? * dynamic scaling script - PV/helm upgrade
 
@@ -118,12 +120,13 @@ v * update strategy: Rolling Update
 	- http://rahmonov.me/posts/zero-downtime-deployment-with-kubernetes/
 v * PodPriority
 v * restartPolicy
+v * README
+* mongo cape
 * volume snaptshot
 	- Alpha - k8s v1.12
 * RBAC - kubeapps
-* mongo cape
 * TPM
-* README
+
 
 HA Issues
 -------------------
