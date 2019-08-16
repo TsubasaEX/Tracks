@@ -1,3 +1,20 @@
+Main Functions Test
+-----------------------------------------------------------
+1. App Health Status
+2. Installed Chart Version
+3. K8s Authentication/Authorization
+4. Accessing Web Services
+5. Chart Repo with Docker Registry
+
+Extra Functions Test
+-----------------------------------------------------------
+*6. Device Stress Test (EdgeSense/DeviceOn)
+*7. Others According to New Features
+*8. Platform Stress Test (Still Planning)
+
+
+
+
 UserManual
 ----
 * Authentication
