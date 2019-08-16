@@ -1,14 +1,41 @@
 Main Functions Test
 -----------------------------------------------------------
-1. App Health Status
-2. Installed Chart Version
-3. K8s Authentication/Authorization
-4. Accessing Web Services
-5. Chart Repo with Docker Registry
+- Version Check
+	- Installed Chart Version
+- Health Check
+	- App Health Status (in all namespaces)
+- AuthN/AuthZ
+	- K8s Authentication/Authorization
+- Accessing
+	- Accessing Web Services
+		- EdgeSense
+		- DeviceOn
+		- RabbitMQ
+		- Minio
+		- Prometheus
+		- Grafana
+		- AlertManager
+		- ChartMuseum
+- Recovery Mechanism
+	- Uninstall Apps/Remove Images
+	- Install Docker Registry
+	- Load Docker Images
+	- Install ChartMuseum
+	- Push Charts
+	- Install apps(installFromRepo)
+- Stress
+	- Device Stress Test
+		- EdgeSense
+		- DeviceOn
 
 Extra Functions Test
 -----------------------------------------------------------
-*6. Device Stress Test (EdgeSense/DeviceOn)
+- Alerting
+	- App Down
+		- 
+	- Storage 
+		- Size over 80%
+			- Mongo
 *7. Others According to New Features
 *8. Platform Stress Test (Still Planning)
 
