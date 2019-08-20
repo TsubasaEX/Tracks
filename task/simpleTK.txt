@@ -14,11 +14,14 @@ v * docker-registry - > secret
 v * ceph-exporter
 v * ceph-dashboard
 v * rolling update
-* maunaul - ceph-dashboard
-* podPriority
-* restartPolicy
+v * maunaul - ceph-dashboard
+v * podPriority
+- * restartPolicy
 v * kubeapps - > minio/disable public repos
 v * kubeapps - > if deployment fails? Not Ready
+* kubeapps - > cronJob
+* kubeapps - > README
+* kubeapps - > Manual(admin/user)
 * kubeapps - > useful charts?
 * kubeapps - > service catalog
 * add chart icon (mount hostPath)
@@ -29,6 +32,7 @@ v * kubeapps - > if deployment fails? Not Ready
 	- 選datasource (prometheus)
 	- 加Query (可以cluster memory當範例)
 	- 儲存
+* EMQ
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
 
@@ -38,6 +42,7 @@ v * kubeapps - > if deployment fails? Not Ready
 * WeaveScope -> basic-auth/snapshot (root only)
 * Helm-Exporter
 * LDAP
+* Vault KMS -> 2 Nodes
 * Event-Exporter
 * Mongo DB rotation
 * Searchlight
@@ -77,8 +82,9 @@ v * PodPriority
 	- Nginx/CoreDNS	
 	- Docker Registry/Chartmuseum
 
-* recover docker-registry/images
-* HDD/SSD systeminfo
+v * recover docker-registry/images
+v * HDD/SSD systeminfo
+* recovery documents - admin
 * Default Storage Class
 * Encrypting Secret Data at Rest
 	- Kubernetes version 1.13.0 or later is required
@@ -93,8 +99,7 @@ v * PodPriority
 
 * scaling scripts - helm upgade
 * scaling manual
-
-* NAS Support
+* CI/CD
 
 v * update ADV_Param
 * technical manual - architecture (ip)
@@ -106,8 +111,10 @@ v * update ADV_Param
 Newbie
 -------------------
 * Rook
+* restic
+* velero
 * volume snaptshot
-
+* NAS Support
 
 Me
 -------------------
