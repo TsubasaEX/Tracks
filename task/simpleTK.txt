@@ -19,9 +19,11 @@ v * podPriority
 - * restartPolicy
 v * kubeapps - > minio/disable public repos
 v * kubeapps - > if deployment fails? Not Ready
-* kubeapps - > cronJob
-* kubeapps - > README
-* kubeapps - > Manual(admin/user)
+* kubeapps 
+	- cronJob
+	- README
+	- Manual(admin/user)
+	- RBAC
 * kubeapps - > useful charts?
 * kubeapps - > service catalog
 * add chart icon (mount hostPath)
@@ -168,7 +170,6 @@ v * README
 * mongo cape
 * volume snaptshot
 	- Alpha - k8s v1.12
-* RBAC - kubeapps
 * TPM
 
 
