@@ -27,28 +27,55 @@ v * kubeapps - > if deployment fails? Not Ready
 * add chart icon (mount hostPath)
 * Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add Repo/Refresh)
 *1.如何新增plugin (root only)
+	- online
+	- offline
  2.如何自己創建dashboard
 	- 拉Panel
 	- 選datasource (prometheus)
 	- 加Query (可以cluster memory當範例)
 	- 儲存
-* EMQ
+* event-exporter
+* helm-exporter
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
 
 
-
 ^^^^^
-* WeaveScope -> basic-auth/snapshot (root only)
-* Helm-Exporter
+* WeaveScope -> root only
+	- basic-auth
+	- scope-http-statistics
+	- scope-volume-count
+	- scope-iowait
+	- snapshot
 * LDAP
-* Vault KMS -> 2 Nodes
-* Event-Exporter
+* Vault KMS -> 1Node? 2Nodes? on k8s? outside?
 * Mongo DB rotation
 * Searchlight
 * Mongo Sharding w/ replica -> 3 Nodes
 * Rancher -> replace kube-dashboard
-* efk-stack -> 2 Nodes 
+* efk-stack -> 1Node? 2Nodes? 
+* network policy by each pods
+* Pod Security Policy to system:authenticated
+	- privileged: false
+	- hostNetwork: false
+	- allowPrivilegeEscalation: false
+	- defaultAllowPrivilegeEscalation: false
+	- hostPID: false
+	- hostIPC: false
+	- hostNetwork: false
+	-  runAsUser:
+		rule: RunAsAny
+	   fsGroup:
+		rule: RunAsAny
+	   seLinux:
+		rule: RunAsAny
+       supplementalGroups:
+		rule: RunAsAny
+	- volumes: '*'
+* OPA
+	- Allowed hostname *.example.com (ingress whitelist)
+	- Fobidden conflict hostname
+	- Allowed Private Registry
 * minio-exporter
 * minio-dashboard
 * Monitoring Manual - ceph/mino/loki
@@ -85,7 +112,16 @@ v * PodPriority
 v * recover docker-registry/images
 v * HDD/SSD systeminfo
 * recovery documents - admin
+	- docker-registry
+	- chartmuseum
+* remove sudo from ubuntu
+* ceph account
+* kubeconfig
+	- admin.conf (if no config?)
+	- new user?
+* forbid unauthenticated user	
 * Default Storage Class
+* kube-router
 * Encrypting Secret Data at Rest
 	- Kubernetes version 1.13.0 or later is required
 	--experimental-encryption-provider-config
@@ -110,6 +146,7 @@ v * update ADV_Param
 
 Newbie
 -------------------
+* EMQX
 * Rook
 * restic
 * velero
