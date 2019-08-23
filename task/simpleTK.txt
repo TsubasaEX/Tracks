@@ -74,7 +74,7 @@ v * kubeapps - > if deployment fails? Not Ready
        supplementalGroups:
 		rule: RunAsAny
 	- volumes: '*'
-* OPA
+* OPA/OPA Gatekeeper
 	- Allowed hostname *.example.com (ingress whitelist)
 	- Fobidden conflict hostname
 	- Allowed Private Registry
@@ -117,10 +117,7 @@ v * HDD/SSD systeminfo
 	- docker-registry
 	- chartmuseum
 * remove sudo from ubuntu
-* ceph account
-* kubeconfig
-	- admin.conf (if no config?)
-	- new user?
+v * ceph account (default)
 * forbid unauthenticated user	
 * Default Storage Class
 * kube-router
@@ -148,8 +145,13 @@ v * update ADV_Param
 
 Newbie
 -------------------
+* kubeconfig
+	- admin.conf (if no config?)
+	- new user?
 * EMQX
 * Rook
+	- Ceph
+	- NFS
 * restic
 * velero
 * volume snaptshot
