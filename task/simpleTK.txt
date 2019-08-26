@@ -50,34 +50,44 @@ v * kubeapps - > if deployment fails? Not Ready
 	- scope-iowait
 	- snapshot
 * LDAP
-* Vault KMS -> 1Node? 2Nodes? on k8s? outside?
+* Vault
+	- Encryption as a service 
+	    - prior to 1.13 (--experimental-encryption-provider-config)
+		- KMS -> 1Node? 2Nodes? on k8s? outside?
+	- Secrets Management
+		- Accessing and Storing Secrets
+			- Static Secrets (KV Secrets Engine)
+			- service accounts
+	- Encryption as a Service
+		- Dynamic Secrets? (Secrets Engines)
+* Admission Controller
+	- Pod Security Policy to system:authenticated
+		- privileged: false
+		- hostNetwork: false
+		- allowPrivilegeEscalation: false
+		- defaultAllowPrivilegeEscalation: false
+		- hostPID: false
+		- hostIPC: false
+		- hostNetwork: false
+		-  runAsUser:
+			rule: RunAsAny
+		fsGroup:
+			rule: RunAsAny
+		seLinux:
+			rule: RunAsAny
+		supplementalGroups:
+			rule: RunAsAny
+		- volumes: '*'
+	- OPA/OPA Gatekeeper
+		- Allowed hostname *.example.com (ingress whitelist)
+		- Fobidden conflict hostname
+		- Allowed Private Registry
 * Mongo DB rotation
 * Searchlight
 * Mongo Sharding w/ replica -> 3 Nodes
 * Rancher -> replace kube-dashboard
 * efk-stack -> 1Node? 2Nodes? 
 * network policy by each pods
-* Pod Security Policy to system:authenticated
-	- privileged: false
-	- hostNetwork: false
-	- allowPrivilegeEscalation: false
-	- defaultAllowPrivilegeEscalation: false
-	- hostPID: false
-	- hostIPC: false
-	- hostNetwork: false
-	-  runAsUser:
-		rule: RunAsAny
-	   fsGroup:
-		rule: RunAsAny
-	   seLinux:
-		rule: RunAsAny
-       supplementalGroups:
-		rule: RunAsAny
-	- volumes: '*'
-* OPA/OPA Gatekeeper
-	- Allowed hostname *.example.com (ingress whitelist)
-	- Fobidden conflict hostname
-	- Allowed Private Registry
 * minio-exporter
 * minio-dashboard
 * Monitoring Manual - ceph/mino/loki
@@ -123,7 +133,7 @@ v * ceph account (default)
 * kube-router
 * Encrypting Secret Data at Rest
 	- Kubernetes version 1.13.0 or later is required
-	--experimental-encryption-provider-config
+	--experimental-encryption-provider-config (prior to 1.13)
 * replace README
 * ceph balancer		
 * base image - ubuntu
@@ -148,7 +158,12 @@ Newbie
 * kubeconfig
 	- admin.conf (if no config?)
 	- new user?
+* Mongo Capped
+	- 200GB
 * EMQX
+	- stress test
+	- 10T (400/75/1)
+	- 2T (600/75/1)
 * Rook
 	- Ceph
 	- NFS
