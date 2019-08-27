@@ -53,13 +53,14 @@ v * kubeapps - > if deployment fails? Not Ready
 * Vault
 	- Encryption as a service 
 	    - prior to 1.13 (--experimental-encryption-provider-config)
-		- KMS -> 1Node? 2Nodes? on k8s? outside?
+		- KMS (Transit Secrets Engine)-> 1Node? 2Nodes? on k8s? outside?
 	- Secrets Management
 		- Accessing and Storing Secrets
 			- Static Secrets (KV Secrets Engine)
 			- service accounts
+			- Dynamic Secrets? (Secrets Engines)
 	- Encryption as a Service
-		- Dynamic Secrets? (Secrets Engines)
+		- Transit secret engine
 * Admission Controller
 	- Pod Security Policy to system:authenticated
 		- privileged: false
@@ -81,13 +82,18 @@ v * kubeapps - > if deployment fails? Not Ready
 	- OPA/OPA Gatekeeper
 		- Allowed hostname *.example.com (ingress whitelist)
 		- Fobidden conflict hostname
-		- Allowed Private Registry
+		- PV Size Limitation
+		- Allowed Private Docker Repository
+		- Report Audit Results
+* Network Policy by each pods
+	- ingress
+	- egress?
 * Mongo DB rotation
 * Searchlight
 * Mongo Sharding w/ replica -> 3 Nodes
 * Rancher -> replace kube-dashboard
 * efk-stack -> 1Node? 2Nodes? 
-* network policy by each pods
+
 * minio-exporter
 * minio-dashboard
 * Monitoring Manual - ceph/mino/loki
