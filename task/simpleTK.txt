@@ -26,16 +26,24 @@ v * kubeapps - > if deployment fails? Not Ready
 	- RBAC
 * kubeapps - > useful charts?
 * kubeapps - > service catalog
-* add chart icon (mount hostPath)
+* add chart icon (catalog)
+v * add chart icon (applications)
 * Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add Repo/Refresh)
 *1.如何新增plugin (root only)
 	- online
 	- offline
- 2.如何自己創建dashboard
-	- 拉Panel
-	- 選datasource (prometheus)
-	- 加Query (可以cluster memory當範例)
-	- 儲存
+* EMQX
+	- stress test
+	- 2T (200/75/1)
+		QoS 0- lost data? 
+	- 2T (400/75/1)
+		QoS 0- lost data? 
+	- 2T (600/75/1)
+		QoS 0- lost data? 
+	- 10T (400/75/1)
+
+* mongo capped
+	- 200MB (2T)
 * event-exporter
 * helm-exporter
 * loki-stack - > retention period (10T)
@@ -43,13 +51,18 @@ v * kubeapps - > if deployment fails? Not Ready
 
 
 ^^^^^
-* WeaveScope -> root only
+x* WeaveScope -> root only
 	- basic-auth
 	- scope-http-statistics
 	- scope-volume-count
 	- scope-iowait
 	- snapshot
+* efk-stack -> 1Node? 2Nodes? 
 * LDAP
+	- Dex (app+k8s)
+	- Guard (webhook - app)
+	- kuberos
+	- Keycloak
 * Vault
 	- Encryption as a service 
 	    - prior to 1.13 (--experimental-encryption-provider-config)
@@ -86,14 +99,15 @@ v * kubeapps - > if deployment fails? Not Ready
 		- Allowed Private Docker Repository
 		- Report Audit Results
 * Network Policy by each pods
-	- ingress
-	- egress?
+	- apt-get install dnsutils (install nslookup)
+	- nslookup <service>.<namespace>
+	- CIDR in calico pod(Allow Service Range)
+	- ingress  (forbid outbound traffic coming into)
+	- egress (forbid outbound traffic coming out)
 * Mongo DB rotation
 * Searchlight
 * Mongo Sharding w/ replica -> 3 Nodes
 * Rancher -> replace kube-dashboard
-* efk-stack -> 1Node? 2Nodes? 
-
 * minio-exporter
 * minio-dashboard
 * Monitoring Manual - ceph/mino/loki
@@ -129,19 +143,19 @@ v * PodPriority
 
 v * recover docker-registry/images
 v * HDD/SSD systeminfo
+v * ceph account (default)
 * recovery documents - admin
 	- docker-registry
 	- chartmuseum
 * remove sudo from ubuntu
-v * ceph account (default)
-* forbid unauthenticated user	
+* replace README
 * Default Storage Class
-* kube-router
 * Encrypting Secret Data at Rest
 	- Kubernetes version 1.13.0 or later is required
 	--experimental-encryption-provider-config (prior to 1.13)
-* replace README
+* kube-router
 * ceph balancer		
+* helmfile/helmsman
 * base image - ubuntu
 	
 ? * dynamic scaling script - PV/helm upgrade
@@ -161,15 +175,6 @@ v * update ADV_Param
 
 Newbie
 -------------------
-* kubeconfig
-	- admin.conf (if no config?)
-	- new user?
-* Mongo Capped
-	- 200GB
-* EMQX
-	- stress test
-	- 10T (400/75/1)
-	- 2T (600/75/1)
 * Rook
 	- Ceph
 	- NFS
@@ -190,10 +195,12 @@ v * update strategy: Rolling Update
 v * PodPriority
 v * restartPolicy
 v * README
-* mongo cape
+x * TPM
 * volume snaptshot
 	- Alpha - k8s v1.12
-* TPM
+* kubeconfig
+	- admin.conf (if no config?)
+	- new user?
 
 
 HA Issues
