@@ -28,24 +28,23 @@ v * kubeapps - > if deployment fails? Not Ready
 * kubeapps - > service catalog
 * add chart icon (catalog)
 v * add chart icon (applications)
-* Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add Repo/Refresh)
+v * Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add Repo/Refresh)
 *1.如何新增plugin (root only)
 	- online
 	- offline
 * EMQX
 	- stress test
-	- 2T (200/75/1)
-		QoS 0- lost data? 
 	- 2T (400/75/1)
 		QoS 0- lost data? 
 	- 2T (600/75/1)
 		QoS 0- lost data? 
-	- 10T (400/75/1)
-
-* mongo capped
-	- 200MB (2T)
+	- 2T (800/75/1)
+		QoS 0- lost data? 
+	x - 10T (400/75/1)
 * event-exporter
 * helm-exporter
+* mongo capped
+	- 200MB (2T)
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
 
@@ -60,6 +59,7 @@ x* WeaveScope -> root only
 * efk-stack -> 1Node? 2Nodes? 
 * LDAP
 	- Dex (app+k8s)
+	- Cluster auth with GitHub, Dex and Gangway
 	- Guard (webhook - app)
 	- kuberos
 	- Keycloak
@@ -172,6 +172,10 @@ v * update ADV_Param
 * helm backup - /etc/backups
 * IP Change
 * HA Testing
+
+Alex
+-------------------
+
 
 Newbie
 -------------------
