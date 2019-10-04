@@ -41,6 +41,7 @@ v * Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add R
 	- 2T (800/75/1)
 		QoS 0- lost data? 
 	x - 10T (400/75/1)
+* refine shutdown/bootup scripts
 * event-exporter
 * helm-exporter
 * mongo capped
@@ -144,19 +145,28 @@ v * PodPriority
 v * recover docker-registry/images
 v * HDD/SSD systeminfo
 v * ceph account (default)
-* recovery documents - admin
+v * recovery documents - admin
 	- docker-registry
 	- chartmuseum
-* remove sudo from ubuntu
-* replace README
+v * remove sudo from ubuntu
+v * replace README
+* destroy/deploy/reset
+* OS image - ubuntu
+* offline deployment (k8s/ceph/charts)
 * Default Storage Class
+* helmfile/helmsman
 * Encrypting Secret Data at Rest
 	- Kubernetes version 1.13.0 or later is required
 	--experimental-encryption-provider-config (prior to 1.13)
+* tests against deployment(k8s/ceph/charts)
+* tests against deployment(os/k8s/ceph/charts) 
+* 
+* NAS Support
+	* nfs
+	* scaling
+
 * kube-router
 * ceph balancer		
-* helmfile/helmsman
-* base image - ubuntu
 	
 ? * dynamic scaling script - PV/helm upgrade
 
@@ -175,8 +185,34 @@ v * update ADV_Param
 
 Alex
 -------------------
-
-
+* Chaos Testing
+	- Health Check/Function Check
+		- Default
+			- Phase 1 (EdgeSense)
+				- EdgeSense Portal Restart
+				- EdgeSense Worker Restart
+				- EdgeSense OTA Restart
+			*-> portal
+			*-> testbed
+			- Phase 2 (Backend)
+				- Postgres Restart
+				- Mongo Restart
+				- RabbitMQ Restart
+			*-> portal
+			*-> testbed
+		- Network
+			- Random Kill
+			*-> NodePort/URL Access
+		- Monitoring
+			- Random Kill
+			*-> Prometheus/Grafana
+		- Repository
+			- Random Kill
+			*-> installFromRepo
+		- Management
+			- Random Kill
+			*-> delete/deploy From Kubeapps
+	
 Newbie
 -------------------
 * Rook
@@ -185,7 +221,6 @@ Newbie
 * restic
 * velero
 * volume snaptshot
-* NAS Support
 
 Me
 -------------------
@@ -200,12 +235,18 @@ v * PodPriority
 v * restartPolicy
 v * README
 x * TPM
+* HA 
+	- HAProxy
+
 * volume snaptshot
 	- Alpha - k8s v1.12
 * kubeconfig
 	- admin.conf (if no config?)
 	- new user?
-
+* sonobuoy
+	- 0.13.0
+	- e2e
+	- bulkhead
 
 HA Issues
 -------------------
