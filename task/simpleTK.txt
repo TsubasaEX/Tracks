@@ -152,6 +152,8 @@ v * remove sudo from ubuntu
 v * replace README
 * destroy/deploy/reset
 * OS image - ubuntu
+* 2T (HDD) image - ubuntu
+* 2T (SSD) image - ubuntu
 * offline deployment (k8s/ceph/charts)
 * Default Storage Class
 * helmfile/helmsman
@@ -237,7 +239,6 @@ v * README
 x * TPM
 * HA 
 	- HAProxy
-
 * volume snaptshot
 	- Alpha - k8s v1.12
 * kubeconfig
