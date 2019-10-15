@@ -6,5 +6,6 @@ DNS: eiot-gitlab.eastasia.cloudapp.azure.com
 root - Account/Password: root/@dvanZach
 zach - Account/Password: zach.chih/@dvanZach
 cloner - Account/Password: cloner/@dvC10ner
+deployer - Account/Password: deployer/dep10yer
 
 git config --global http.sslVerify false
