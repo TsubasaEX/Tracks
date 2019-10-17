@@ -187,33 +187,37 @@ v * update ADV_Param
 
 Alex
 -------------------
-* Chaos Testing
-	- Health Check/Function Check
+! : check point
+* Test Times : 100times for each items
+* Reliability Testing (Health Check/Function Check)
+	- Namespaces
 		- Default
 			- Phase 1 (EdgeSense)
 				- EdgeSense Portal Restart
 				- EdgeSense Worker Restart
 				- EdgeSense OTA Restart
-			*-> portal
-			*-> testbed
+			!-> portal
+			!-> worker
+			!-> ota
 			- Phase 2 (Backend)
 				- Postgres Restart
 				- Mongo Restart
 				- RabbitMQ Restart
-			*-> portal
-			*-> testbed
+			!-> portal
+			!-> worker
+			!-> ota
 		- Network
-			- Random Kill
-			*-> NodePort/URL Access
+			- Random Kill Pods
+			!-> NodePort/URL Access
 		- Monitoring
-			- Random Kill
-			*-> Prometheus/Grafana
+			- Random Kill Pods
+			!-> Prometheus/Grafana
 		- Repository
-			- Random Kill
-			*-> installFromRepo
+			- Random Kill Pods
+			!-> installFromRepo
 		- Management
-			- Random Kill
-			*-> delete/deploy From Kubeapps
+			- Random Kill Pods
+			!-> delete/deploy From Kubeapps
 	
 Newbie
 -------------------
