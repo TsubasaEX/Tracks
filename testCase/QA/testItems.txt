@@ -16,19 +16,40 @@ Main Functions Test
 		- Grafana
 		- AlertManager
 		- ChartMuseum
-- Recovery Mechanism
-	- Uninstall Apps/Remove Images
-	- Install Docker Registry
-	- Load Docker Images
-	- Install ChartMuseum
-	- Push Charts
-	- Install apps(installFromRepo)
+		- Kubeapps
+- Scripts
+	- Environment
+		- Destroy
+		- Deploy
+		- Reset		
 - Stress
 	- Device Stress Test
 		- EdgeSense
 		- DeviceOn
 
-Extra Functions Test
+
+*- Stress
+	- Device Stress Test
+		- DeviceOn		
+*- Recovery Mechanism
+	- Uninstall Apps/Remove Images
+	- Install Docker Registry
+	- Load Docker Images
+	- Install ChartMuseum
+	- Push Charts
+	- Install apps(installFromRepo)		
+		
+1. Extra Functions Test
+-----------------------------------------------------------		
+- Kubeapps Functions
+	- Delete
+	- Deploy
+- Out of Space Test (Mongo)
+	- Reinstall through Kubeapps
+	- Function Check
+
+	
+2. Extra Functions Test
 -----------------------------------------------------------
 - Alerting
 	- App Down

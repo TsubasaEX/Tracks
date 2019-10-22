@@ -189,35 +189,41 @@ Alex
 -------------------
 ! : check point
 * Test Times : 100times for each items
-* Reliability Testing (Health Check/Function Check)
+* Resilience Testing (Health Check/Function Check)
 	- Namespaces
 		- Default
-			- Phase 1 (EdgeSense)
-				- EdgeSense Portal Restart
-				- EdgeSense Worker Restart
-				- EdgeSense OTA Restart
-			!-> portal
-			!-> worker
-			!-> ota
-			- Phase 2 (Backend)
-				- Postgres Restart
-				- Mongo Restart
-				- RabbitMQ Restart
-			!-> portal
-			!-> worker
-			!-> ota
+			- EdgeSense
+				- Kill EdgeSense Portal 
+					!-> portal
+				- Kill EdgeSense Worker 
+					!-> worker
+				- Kill EdgeSense OTA Worker
+					!-> ota
+			- Backend
+				- Kill Postgres
+					!-> portal
+					!-> worker
+					!-> ota
+				- Kill Mongo
+					!-> portal
+					!-> worker
+					!-> ota
+				- Kill RabbitMQ
+					!-> portal
+					!-> worker
+					!-> ota
 		- Network
 			- Random Kill Pods
-			!-> NodePort/URL Access
+				!-> NodePort/URL Access
 		- Monitoring
 			- Random Kill Pods
-			!-> Prometheus/Grafana
+				!-> Prometheus/Grafana
 		- Repository
 			- Random Kill Pods
-			!-> installFromRepo
+				!-> installFromRepo
 		- Management
 			- Random Kill Pods
-			!-> delete/deploy From Kubeapps
+				!-> delete/deploy From Kubeapps
 	
 Newbie
 -------------------
