@@ -9,3 +9,14 @@ cloner - Account/Password: cloner/@dvC10ner
 deployer - Account/Password: deployer/dep10yer
 
 git config --global http.sslVerify false
+
+
+NAS
+IP: http://172.22.12.116:5000/?timestamp=1571724176
+admin/fuckyou
+
+Synology Account/Password
+username: gpi33039
+email: gpi33039@eanok.com
+password: fuck33039
+

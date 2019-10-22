@@ -24,6 +24,15 @@ Terry Router
 wifi: k8s-lan
 password: advant1cH
 
+NAS
+IP: http://172.22.12.116:5000/?timestamp=1571724176
+admin/fuckyou
+
+Synology Account/Password
+username: gpi33039
+email: gpi33039@eanok.com
+password: fuck33039
+
 Kube Dashboard
 https://192.168.11.6:6443/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/login
 
