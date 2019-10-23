@@ -151,6 +151,8 @@ v * recovery documents - admin
 v * remove sudo from ubuntu
 v * replace README
 * destroy/deploy/reset
+	- ceph secret
+	- pod priority
 * OS image - ubuntu
 * 2T (HDD) image - ubuntu
 * 2T (SSD) image - ubuntu
