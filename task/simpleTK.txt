@@ -19,21 +19,22 @@ v * podPriority
 - * restartPolicy
 v * kubeapps - > minio/disable public repos
 v * kubeapps - > if deployment fails? Not Ready
-* kubeapps 
+v * kubeapps 
 	- cronJob
 	- README
 	- Manual(admin/user)
 	- RBAC
 * kubeapps - > useful charts?
 * kubeapps - > service catalog
-* add chart icon (catalog)
+v * add chart icon (catalog)
 v * add chart icon (applications)
 v * Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add Repo/Refresh)
-*1.如何新增plugin (root only)
+v *1.如何新增plugin (root only)
 	- online
 	- offline
 * EMQX
 	- stress test
+	- 2T (200/75/1)
 	- 2T (400/75/1)
 		QoS 0- lost data? 
 	- 2T (600/75/1)
@@ -43,7 +44,8 @@ v * Admin/User Manual - > App Management (Permissiom/Deploy/Delete/Upgrade/Add R
 	x - 10T (400/75/1)
 * refine shutdown/bootup scripts
 * event-exporter
-* helm-exporter
+	-	https://hub.docker.com/r/mintel/event-exporter
+v * helm-exporter
 * mongo capped
 	- 200MB (2T)
 * loki-stack - > retention period (10T)
@@ -153,6 +155,7 @@ v * replace README
 * destroy/deploy/reset
 	- ceph secret
 	- pod priority
+	- RBAC
 * OS image - ubuntu
 * 2T (HDD) image - ubuntu
 * 2T (SSD) image - ubuntu
@@ -187,7 +190,7 @@ v * update ADV_Param
 * IP Change
 * HA Testing
 
-Alex
+Alec
 -------------------
 ! : check point
 * Test Times : 100times for each items
@@ -260,6 +263,7 @@ x * TPM
 	- 0.13.0
 	- e2e
 	- bulkhead
+* where to put installers?
 
 HA Issues
 -------------------
