@@ -45,11 +45,14 @@ v *1.如何新增plugin (root only)
 * refine shutdown/bootup scripts
 * event-exporter
 	-	https://hub.docker.com/r/mintel/event-exporter
+	- event type!=Normal
 v * helm-exporter
 * mongo capped
 	- 200MB (2T)
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
+* Kube-hunter
+* Kube-bench
 
 
 ^^^^^
@@ -159,21 +162,24 @@ v * replace README
 * OS image - ubuntu
 * 2T (HDD) image - ubuntu
 * 2T (SSD) image - ubuntu
-* offline deployment (k8s/ceph/charts)
+* offline deployment/removal (k8s/ceph/charts)
+	- QAs
 * Default Storage Class
 * helmfile/helmsman
 * Encrypting Secret Data at Rest
 	- Kubernetes version 1.13.0 or later is required
 	--experimental-encryption-provider-config (prior to 1.13)
 * tests against deployment(k8s/ceph/charts)
-* tests against deployment(os/k8s/ceph/charts) 
-* 
+* tests against deployment(os/k8s/ceph/charts)
 * NAS Support
 	* nfs
 	* scaling
+	* scripts
+		- switch pvc from ceph rbd to nfs (warning: tell users to have a backup plan)
 
 * kube-router
 * ceph balancer		
+* tools to export journals/logs
 	
 ? * dynamic scaling script - PV/helm upgrade
 
