@@ -53,8 +53,13 @@ v * helm-exporter
 * loki-stack - > add labels for all apps
 * Kube-hunter
 * Kube-bench
-
-
+* goldilocks
+	- vpa to refine resources quota
+* polaris
+	- get the cluster state and improve
+* kube-bench
+	- get the cluster security by running the checks documented in the CIS Kubernetes Benchmark.
+	
 ^^^^^
 x* WeaveScope -> root only
 	- basic-auth
@@ -259,7 +264,9 @@ v * restartPolicy
 v * README
 x * TPM
 * HA 
-	- HAProxy
+	- HAProxy + keepalive
+	- how many worker instances and memory usage?
+	- how many portal instances and memory usage?
 * volume snaptshot
 	- Alpha - k8s v1.12
 * kubeconfig
@@ -270,6 +277,7 @@ x * TPM
 	- e2e
 	- bulkhead
 * where to put installers?
+
 
 HA Issues
 -------------------
