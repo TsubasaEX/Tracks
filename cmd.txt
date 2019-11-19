@@ -152,6 +152,9 @@ etcdctl
 etcdctl --endpoints=https://192.168.11.6:2379 --cert-file=/etc/ssl/etcd/ssl/member-k8s-m1.pem --key-file=/etc/ssl/etcd/ssl/member-k8s-m1-key.pem cluster-health
 etcdctl --endpoints=https://192.168.11.6:2379 --cert-file=/etc/ssl/etcd/ssl/member-k8s-m1.pem --key-file=/etc/ssl/etcd/ssl/member-k8s-m1-key.pem member list
 ETCDCTL_API=3 etcdctl get /registry/secrets/default/secret1 --endpoints=https://192.168.11.6:2379 --cert=/etc/ssl/etcd/ssl/member-k8s-m1.pem --key=/etc/ssl/etcd/ssl/member-k8s-m1-key.pem | hexdump -C
+export ETCDCTL_API=3
+etcdctl --key ca-key.pem --cert=ca.pem endpoint health
+etcdctl --key ca-key.pem --cert=ca.pem get "" --from-key|grep advant1cH -A2 -B2
 **********************
 kubectl config --kubeconfig=config set-cluster kubernetes --server=https://192.168.11.6:6443 --certificate-authority=C:\ca.crt
 kubectl config --kubeconfig=config set-cluster kubernetes --certificate-authority=C:\ca.crt

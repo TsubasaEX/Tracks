@@ -73,7 +73,7 @@ The first command tags the image for uploading to your registry and the second p
 Pull from your registry
 Let's try to pull the image from your registry. You should find that your image is up to date.
 1.	docker pull adveiss.azurecr.io/hello-world
-
+@DV27927818
 -------------------------------------------------------------------------  
 ASUS
 admin
@@ -83,3 +83,19 @@ wifi
 -------------------------------------------------------------------------  
 CoreDNS設定
 LAN -> DHCP Server -> DNS Server 192.168.11.6
+
+-------------------------------------------------------------------------  
+Betty	一台2T (HDD/SSD)的環境 (ARK-3530 – Xeon 3.8GHz)
+CPU: XE3-1275 E3-1275 v6 @ 3.8GHz
+HDD: ST1000VT001-1RE172  1T*2
+MSATA SSD: SQR-SD4I-16G2K1SNB
+Alec	192.168.11.8當作測試工具環境 (AIMB)
+Evelyn	一台2T HDD的環境 (ARK-3530 – Intel 3.4GHz)
+CPU: i7-6700 @ 3.4GHz
+HDD: ST1000VT001-1RE172  1T*2
+MSATA SSD: SQR-SD4M-16G2K1SNB
+Terry	一台10T HDD測試CoreDNS (ARK-3530 – Intel 2.4GHz)
+CPU: i7-6700TE @ 2.4GHz
+HDD: ST5000LM000-2AN170  5T*2
+MSATA SSD: SQR-SD4I-16G2K1SNB
+
