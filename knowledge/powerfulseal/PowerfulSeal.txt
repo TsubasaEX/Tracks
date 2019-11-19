@@ -1,0 +1,27 @@
+1. apt install python-pip
+2. pip install --upgrade pip
+3. 修改/usr/bin/pip
+將原本內容
+==============================
+from pip import main
+if __name__ == '__main__':
+	sys.exit(main())
+==============================
+修改為以下內容
+==============================
+from pip import __main__
+if __name__ == '__main__':
+	sys.exit(__main__._main())
+==============================
+4. 修正'module' object has no attribute 'SSL_ST_INIT'錯誤
+	rm -rf /usr/lib/python2.7/dist-packages/OpenSSL
+	rm -rf /usr/lib/python2.7/dist-packages/pyOpenSSL-0.15.1.egg-info
+	sudo pip install pyopenssl
+5. pip install powerfulseal
+6. cp /root/ca/ca.pem /root/.kube
+7. kubectl config set-cluster cluster.local --certificate-authority=/root/.kube/ca.pem
+8. interactive:
+		seal interactive --kubeconfig /root/.kube/config --no-cloud --inventory-kubernetes --remote-user root --ssh-password r00tadvant1cH
+   autonomous:
+   需先撰寫好yml檔並由--policy-file指定路徑
+		seal autonomous --kubeconfig /root/.kube/config --no-cloud --inventory-kubernetes --remote-user root --ssh-password r00tadvant1cH --policy-file /root/example_config.yml --host 192.168.11.8 --port 1234

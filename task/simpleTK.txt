@@ -52,7 +52,6 @@ v * helm-exporter
 * loki-stack - > retention period (10T)
 * loki-stack - > add labels for all apps
 * Kube-hunter
-* Kube-bench
 * goldilocks
 	- vpa to refine resources quota
 * polaris
