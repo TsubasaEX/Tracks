@@ -1,42 +1,37 @@
-Main Functions Test
------------------------------------------------------------
+### :memo: Main Functions Test
 - Version Check
-	- Installed Chart Version
+    - Installed Chart Version
 - Health Check
-	- App Health Status (in all namespaces)
+    - App Health Status (in all namespaces)
 - AuthN/AuthZ
-	- K8s Authentication/Authorization
+    - K8s Authentication/Authorization
 - Accessing
-	- Accessing Web Services
-		- EdgeSense
-		- DeviceOn
-		- RabbitMQ
-		- Minio
-		- Prometheus
-		- Grafana
-		- AlertManager
-		- ChartMuseum
-		- Kubeapps
+    - Accessing Web Services
+        - EdgeSense
+        - DeviceOn
+        - RabbitMQ
+        - Minio
+        - Prometheus
+        - Grafana
+        - AlertManager
+        - ChartMuseum
+        - Kubeapps
+- App Management
+    - Delete
+    - Deploy
+    - Upgrade
 - Scripts
-	- Environment
-		- Destroy
-		- Deploy
-		- Reset		
-- Stress
-	- Device Stress Test
-		- EdgeSense
+    - Environment
+        - Destroy
+        - Deploy
+        - Reset
+- Stress Test
+    - EdgeSense
 
-
-*- Stress
-	- Device Stress Test
-		- DeviceOn		
-*- Recovery Mechanism
-	- Uninstall Apps/Remove Images
-	- Install Docker Registry
-	- Load Docker Images
-	- Install ChartMuseum
-	- Push Charts
-	- Install apps(installFromRepo)		
+### Bugs & Issues
+- [Scripts] bootup/shutdown
+- [CoreDNS] http://aclredmine.advantech.com.tw/redmines/ecg/issues/6274
+- [Kubeapps] http://aclredmine.advantech.com.tw/redmines/ecg/issues/6707
 		
 1. Extra Functions Test
 -----------------------------------------------------------		
