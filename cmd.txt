@@ -108,10 +108,10 @@ rbd export {pool-name}/{image-name} {file}
 rbd export kube/kubernetes-dynamic-pvc-022c5578-38d4-11e9-824a-c400ad16bc2d ./image_export
 rbd import {file} {pool-name}/{image-name}
 rbd info kube/kubernetes-dynamic-pvc-9b34bbbb-04e9-11e9-b6c5-e6287e6e4a2f
-rbd diff kube/kubernetes-dynamic-pvc-83f4cf42-9be2-11e9-90bb-c400ad16bc2d | awk '{ SUM += $2 } END { print SUM/1024/1024 " MB" }'
-
-rbd rm kube/kubernetes-dynamic-pvc-79efc594-245f-11e9-bd5a-c400ad16bc2d
-ceph osd blacklist add 192.168.11.6:0/3999158821
+rbd diff kube/kubernetes-dynamic-pvc-34955e37-2787-11ea-8188-c400ad0d608e | awk '{ SUM += $2 } END { print SUM/1024/1024 " MB" }'
+rbd status kube/kubernetes-dynamic-pvc-34955e37-2787-11ea-8188-c400ad0d608e
+rbd rm kube/kubernetes-dynamic-pvc-34955e37-2787-11ea-8188-c400ad0d608e
+ceph osd blacklist add 192.168.11.21:0/4214413834
 kubectl set image deployment/es-rmm-portal es-rmm-portal=ecgwc/es-rmm-portal:1.0.98 --record=true
 kubectl rollout history deployment/es-rmm-portal 
 kubectl rollout
@@ -126,8 +126,9 @@ kubectl get secret ceph-secret-user --export -o yaml
 
 //---remove rbd image
 rbd status kube/kubernetes-dynamic-pvc-0455b319-6fc6-11e9-9f98-000babd4616d
-ceph osd blacklist add 192.168.11.6:0/1121347948
+ceph osd blacklist add 192.168.11.21:0/191664736
 ceph osd blacklist clear
+rbd rm kube/kubernetes-dynamic-pvc-34955e37-2787-11ea-8188-c400ad0d608e
 
 netstat -tulpn
 lsof -i

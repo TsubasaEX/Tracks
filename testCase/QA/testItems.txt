@@ -20,18 +20,29 @@
     - Delete
     - Deploy
     - Upgrade
-- Scripts
-    - Environment
-        - Destroy
-        - Deploy
-        - Reset
+- App Scripts
+    - Destroy
+    - Deploy
+    - Reset
+- Storage Alerts
+	- Prometheus
 - Stress Test
-    - EdgeSense
+    - EdgeSense (HDD-200 / SSD-400)
 
-### Bugs & Issues
-- [Scripts] bootup/shutdown
+### Bugs
 - [CoreDNS] http://aclredmine.advantech.com.tw/redmines/ecg/issues/6274
 - [Kubeapps] http://aclredmine.advantech.com.tw/redmines/ecg/issues/6707
+- [Grafana] http://aclredmine.advantech.com.tw/redmines/ecg/issues/6318
+
+### Issues
+- [System Scripts] bootup/shutdown (Restart DSS)
+- [Prometheus] Health Status (Restart DSS)
+- [Ceph] Occasional Not Work (Do Nothing or Restart DSS)
+- [Kube-proxy] Occasional CrashLoopBack (Restart Kubelet Service)
+- [Kube-scheduler] Occasional CrashLoopBack (Restart Kubelet Service)
+
+
+
 		
 1. Extra Functions Test
 -----------------------------------------------------------		
