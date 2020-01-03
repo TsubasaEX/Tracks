@@ -1,3 +1,7 @@
+* Bundle OS Image?
+* What Router?
+ 
+
 Evelyn
 -------------------
 v * rebooting manual/scripts
