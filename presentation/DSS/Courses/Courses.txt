@@ -1,0 +1,30 @@
+**Courses of Data Service Server**
+* Introuduction
+    * What is a Container?
+    * What is Docker?
+    * What is Kubernetes?
+        * Tools (Kubectl/Helm)
+        * Resources (Deployment/Pods...)
+    * What is a Helm Chart?
+    * What is Helm?
+    * Data Service Server
+        * Services
+        * Scalability
+        * Monitoring System
+
+* Data Service Server
+    * Basic Commands (Kubectl/Helm) 
+    * Accessing Kubernetes
+    * Viewing Resources
+    * Accessing Web Services (EdgeSense/DeviceOn/Grafana...)
+-----------------------------------------------------------------------    
+* Others (Only When in need)
+    * Want to install your applications?
+        * How to prepare your applications?
+            * Preparing Images
+            * Preparing a Chart
+        * How to install your applications on DSS?
+            * From a local chart archive
+            * From a unpacked chart directory
+            * From a repository 
+        * Public Helm Repository
